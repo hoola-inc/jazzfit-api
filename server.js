@@ -39,7 +39,7 @@ app.use(morgan('combined', { "stream": winston.stream.write }));
 
 // default route
 app.get("/", (req, res, next) => {
-    return res.status(200).json({ message: "Welcome to XdemiC api" });
+    return res.status(200).json({ message: "Welcome to JazzFit Api" });
 });
 
 // import all routes at once
