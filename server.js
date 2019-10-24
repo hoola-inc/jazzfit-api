@@ -12,6 +12,7 @@ const http = require("http");
 const app = express();
 const server = http.createServer(app);
 const winston = require('winston');
+const cool = require('cool-ascii-faces');
 
 
 // init env var
@@ -39,7 +40,7 @@ app.use(morgan('combined', { "stream": winston.stream.write }));
 
 // default route
 app.get("/", (req, res, next) => {
-    return res.status(200).json({ message: "Welcome to JazzFit Api" });
+    return res.status(200).json({ message: "Welcome to JazzFit Api", cheers: cool() });
 });
 
 // import all routes at once
