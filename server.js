@@ -13,6 +13,7 @@ const app = express();
 const server = http.createServer(app);
 const winston = require('winston');
 const cool = require('cool-ascii-faces');
+const axios = require('axios');
 
 
 // init env var
@@ -55,10 +56,6 @@ require('./src/utilities/error-handler.utility')(app);
 // db config
 require('./src/config/db.config');
 
-
-
-// server listen for requests
-// server listen for requests
 
 const port = process.env.PORT;
 app.listen(port, () => {
