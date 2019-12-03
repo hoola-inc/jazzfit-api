@@ -1,18 +1,16 @@
-const UserModel = require("../models/user.model");
+const EmpModel = require("../models/employee.model");
 
 exports.createUser = async (req, res, next) => {
   try {
     if (Object.keys(req.body).length === 0) {
-      console.log(" Body id null ");
+      throw Error('body is null');
     } else {
-      const newUser = new UserModel(req.body);
+      const newUser = new EmpModel(req.body);
       const saveUser = await newUser.save();
-      if (saveUser) {
-        return res.status(200).json({
-          status: true,
-          data: saveUser
-        });
-      }
+      return res.status(200).json({
+        status: true,
+        data: saveUser
+      });
     }
   } catch (error) {
     next(error);
@@ -21,8 +19,7 @@ exports.createUser = async (req, res, next) => {
 
 exports.getAllUser = async (req, res, next) => {
   try {
-    const getAllUser = await UserModel.find();
-    console.log(getAllUser);
+    const getAllUser = await EmpModel.find();
     if (getAllUser.length > 0) {
       return res.status(200).json({
         status: true,
@@ -42,9 +39,9 @@ exports.getAllUser = async (req, res, next) => {
 
 exports.getUserById = async (req, res, next) => {
   try {
-    const userId = req.params.id;
-    const findUserById = await UserModel.find({
-      _id: userId
+    const empId = req.params.id;
+    const findUserById = await EmpModel.find({
+      _id: empId
     });
     if (findUserById) {
       return res.status(200).json({
@@ -54,7 +51,7 @@ exports.getUserById = async (req, res, next) => {
     } else {
       return res.status(200).json({
         status: false,
-        message: "not user found by id: " + userId
+        message: "not user found by id: " + empId
       });
     }
   } catch (error) {
