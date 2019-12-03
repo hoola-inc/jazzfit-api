@@ -1,4 +1,5 @@
 const EmpModel = require("../models/employee.model");
+const jwt = require('jsonwebtoken');
 
 exports.createUser = async (req, res, next) => {
   try {
@@ -7,9 +8,11 @@ exports.createUser = async (req, res, next) => {
     } else {
       const newUser = new EmpModel(req.body);
       const saveUser = await newUser.save();
+      const token = jwtToken(req.body.email);
       return res.status(200).json({
         status: true,
-        data: saveUser
+        data: saveUser,
+        jwtToken: token
       });
     }
   } catch (error) {
@@ -41,7 +44,7 @@ exports.getUserById = async (req, res, next) => {
   try {
     const empId = req.params.id;
     const findUserById = await EmpModel.find({
-      _id: empId
+      empId: empId
     });
     if (findUserById) {
       return res.status(200).json({
@@ -57,4 +60,12 @@ exports.getUserById = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-};
+}
+
+const jwtToken = email => {
+  const payload = { email: email };
+  const options = { expiresIn: '365d' };
+  const secret = process.env.JWT_SECRET;
+  const token = jwt.sign(payload, secret, options);
+  return token;
+}

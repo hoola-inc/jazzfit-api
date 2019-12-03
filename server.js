@@ -45,13 +45,13 @@ app.get("/", (req, res, next) => {
 });
 
 // import all routes at once
-require('./src/utilities/routes.utility')(app);
+require('./src/utilities/routes.utils')(app);
 
 // logger 
 require('./src/config/logger.config');
 
 // Handling non-existing routes
-require('./src/utilities/error-handler.utility')(app);
+require('./src/utilities/error-handler.utils')(app);
 
 // db config
 require('./src/config/db.config');
