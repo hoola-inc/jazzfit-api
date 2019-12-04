@@ -62,6 +62,28 @@ exports.getUserById = async (req, res, next) => {
   }
 }
 
+
+exports.getEmpTotalAttempt = async (req, res, next) => {
+  try {
+    const empId = req.params.id;
+    if (empId) {
+      const totalAttemptsOfEmp = await EmpModel.findOne({
+        empId: empId
+      }).select('totalAttempt');
+
+      return res.status(200).json({
+        status: true,
+        data: totalAttemptsOfEmp
+      })
+
+    } else {
+      throw Error('employee id not found');
+    }
+  } catch (error) {
+    next(error);
+  }
+}
+
 const jwtToken = email => {
   const payload = { email: email };
   const options = { expiresIn: '365d' };
