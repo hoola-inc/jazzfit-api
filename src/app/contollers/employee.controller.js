@@ -68,7 +68,7 @@ exports.getEmpTotalAttempt = async (req, res, next) => {
     const empId = req.params.id;
     if (empId) {
 
-      const totalAttemptsOfEmp = await EmpModel.findOne({ empId: empId }).select('totalAttempt');
+      const totalAttemptsOfEmp = await EmpModel.findOne({ empId: empId }).select('totalAttempt empId');
 
       return res.status(200).json({
         status: true,

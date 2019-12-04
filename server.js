@@ -62,4 +62,6 @@ app.listen(port, () => {
     console.log(`%s Server is listening on port ${port}`, chalk.green('✓'));
 });
 
-module.exports = app; // for testing
+module.exports = {
+    app: app
+}; // for testing
