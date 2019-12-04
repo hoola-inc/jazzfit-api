@@ -73,7 +73,7 @@ exports.getEmpTotalAttempt = async (req, res, next) => {
       return res.status(200).json({
         status: true,
         data: totalAttemptsOfEmp
-      })
+      });
 
     } else {
       throw Error('employee id not found');
@@ -88,12 +88,12 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
     const empId = req.params.id;
     const updateObject = req.body;
     if (empId) {
-      const updateAttempts = await EmpModel.update({ empId: empId }, { $set: updateObject });
+      await EmpModel.update({ empId: empId }, { $set: updateObject }, { runValidators: true });
 
       return res.status(200).json({
         status: true,
         message: 'Attempts updated successfully'
-      })
+      });
 
     } else {
       throw Error('Emp id not found');
