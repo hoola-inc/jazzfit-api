@@ -42,6 +42,15 @@ const EmployeeSchema = mongoose.Schema({
     gender: {
         type: String,
         required: true
+    },
+    totalAttempt: {
+        type: Number,
+        validate: {
+            validator: (value) => {
+                return value && value.length === 2;
+            },
+            message: 'Answer options should be 2.'
+        }
     }
 
 }, {
