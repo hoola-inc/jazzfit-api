@@ -61,3 +61,5 @@ const port = process.env.PORT;
 app.listen(port, () => {
     console.log(`%s Server is listening on port ${port}`, chalk.green('✓'));
 });
+
+module.exports = app; // for testing

@@ -2,19 +2,47 @@ const mongoose = require('mongoose');
 
 const EmployeeSchema = mongoose.Schema({
 
-    empName: String,
-    empId: String,
-    department: String,
-    height: String,
-    weight: String,
+    empName: {
+        type: String,
+        lowercase: true,
+        trim: true,
+        required: true
+    },
+    empId: {
+        type: Number,
+        lowercase: true,
+        trim: true,
+        required: true
+    },
+    department: {
+        type: String,
+        lowercase: true,
+        trim: true,
+        required: true
+    },
+    height: {
+        type: String,
+        required: true
+    },
+    weight: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         lowercase: true,
         trim: true,
-        unique: true
+        unique: true,
+        required: true
     },
-    dateOfBirth: String,
-    gender: String
+    dateOfBirth: {
+        type: String,
+        required: true
+    },
+    gender: {
+        type: String,
+        required: true
+    }
 
 }, {
     timestamps: true
