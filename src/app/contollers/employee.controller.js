@@ -67,9 +67,8 @@ exports.getEmpTotalAttempt = async (req, res, next) => {
   try {
     const empId = req.params.id;
     if (empId) {
-      const totalAttemptsOfEmp = await EmpModel.findOne({
-        empId: empId
-      }).select('totalAttempt');
+
+      const totalAttemptsOfEmp = await EmpModel.findOne({ empId: empId }).select('totalAttempt');
 
       return res.status(200).json({
         status: true,
@@ -78,6 +77,26 @@ exports.getEmpTotalAttempt = async (req, res, next) => {
 
     } else {
       throw Error('employee id not found');
+    }
+  } catch (error) {
+    next(error);
+  }
+}
+
+exports.updateEmpTotalAttempt = async (req, res, next) => {
+  try {
+    const empId = req.params.id;
+    const updateObject = req.body;
+    if (empId) {
+      const updateAttempts = await EmpModel.update({ empId: empId }, { $set: updateObject });
+
+      return res.status(200).json({
+        status: true,
+        message: 'Attempts updated successfully'
+      })
+
+    } else {
+      throw Error('Emp id not found');
     }
   } catch (error) {
     next(error);
