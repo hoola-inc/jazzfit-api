@@ -8,12 +8,9 @@ const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const multer = require('multer');
 const env = require('dotenv');
-const http = require("http");
 const app = express();
-const server = http.createServer(app);
 const winston = require('winston');
 const cool = require('cool-ascii-faces');
-const axios = require('axios');
 
 
 // init env var
@@ -37,7 +34,7 @@ app.use(helmet());
 app.use(morgan('dev'));
 
 // setup the winston stream 
-app.use(morgan('combined', { "stream": winston.stream.write }));
+// app.use(morgan('combined', { "stream": winston.stream.write }));
 
 // default route
 app.get("/", (req, res, next) => {
