@@ -20,7 +20,7 @@ const QuestionAnswerSchema = mongoose.Schema({
         type: String,
         enum: ['Mental', 'Physical', 'Social', 'Emotional'],
     },
-    answerWeitage: {
+    answerWeightage: {
         type: String
     }
 
