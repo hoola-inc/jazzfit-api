@@ -12,7 +12,6 @@ const app = express();
 const winston = require('winston');
 const cool = require('cool-ascii-faces');
 
-
 // init env var
 env.config();
 
