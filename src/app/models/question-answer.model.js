@@ -21,7 +21,7 @@ const QuestionAnswerSchema = mongoose.Schema({
         enum: ['Mental', 'Physical', 'Social', 'Emotional'],
     },
     answerWeightage: {
-        type: String
+        type: Number
     }
 
 }, {

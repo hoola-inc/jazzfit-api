@@ -12,7 +12,8 @@ const EmployeeSchema = mongoose.Schema({
         type: Number,
         lowercase: true,
         trim: true,
-        required: true
+        required: true,
+        unique: true
     },
     department: {
         type: String,
