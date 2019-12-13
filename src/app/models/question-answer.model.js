@@ -18,7 +18,7 @@ const QuestionAnswerSchema = mongoose.Schema({
     },
     wellnessType: {
         type: String,
-        enum: ['Mental', 'Physical', 'Social', 'Emotional'],
+        enum: ['mental', 'physical', 'social', 'emotional'],
     },
     answerWeightage: {
         type: Number
