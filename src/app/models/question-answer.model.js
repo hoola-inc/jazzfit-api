@@ -8,12 +8,12 @@ const QuestionAnswerSchema = mongoose.Schema({
     },
     questionText: {
         type: String,
-        minlength: 10,
+        minlength: 0,
         maxlength: 1000,
     },
     answerText: {
         type: String,
-        minlength: 10,
+        minlength: 0,
         maxlength: 1000,
     },
     wellnessType: {
