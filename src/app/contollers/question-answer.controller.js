@@ -46,3 +46,50 @@ exports.getAllQuestionAnswer = async (req, res, next) => {
         next(error);
     }
 }
+
+exports.scoreWeightage = async (req, res, next) => {
+    try {
+        const data = await QuestionAnswerSchema.find({
+            wellnessType: req.body.wellnessType,
+            empId: req.body.empId
+        }).select('wellnessType empId answerWeightage');
+
+        if (data.length > 0) {
+            return res.status(200).json({
+                status: true,
+                length: data.length,
+                data: data
+            })
+        } else {
+            return res.status(200).json({
+                status: true,
+                message: 'no record found'
+            })
+        }
+    } catch (error) {
+        next(error);
+    }
+}
+
+exports.scoreWeightageByEmpId = async (req, res, next) => {
+    try {
+        const data = await QuestionAnswerSchema.find({
+            empId: req.params.id
+        });
+
+        if (data.length > 0) {
+            return res.status(200).json({
+                status: true,
+                data: data
+            })
+        } else {
+            return res.status(200).json({
+                status: true,
+                length: data.length,
+                message: 'no record found'
+            })
+        }
+    } catch (error) {
+        next(error);
+    }
+}
