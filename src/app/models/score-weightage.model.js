@@ -1,26 +1,16 @@
 const mongoose = require('mongoose');
 
-const QuestionAnswerSchema = mongoose.Schema({
+const ScoreWeightage = mongoose.Schema({
 
     empId: {
         type: Number,
         ref: 'Employee'
     },
-    questionText: {
-        type: String,
-        minlength: 0,
-        maxlength: 1000,
-    },
-    answerText: {
-        type: String,
-        minlength: 0,
-        maxlength: 1000,
-    },
     wellnessType: {
         type: String,
         enum: ['mental', 'physical', 'social', 'emotional'],
     },
-    answerWeightage: {
+    totalScore: {
         type: Number
     },
     totalAttempt: {
@@ -35,4 +25,4 @@ const QuestionAnswerSchema = mongoose.Schema({
 });
 
 
-module.exports = mongoose.model('QuestionAnswer', QuestionAnswerSchema);
+module.exports = mongoose.model('ScoreWeightage', ScoreWeightage);

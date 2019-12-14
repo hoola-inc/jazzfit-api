@@ -1,14 +1,12 @@
 const QuestionAnswerSchema = require('../models/question-answer.model');
+const ScoreSchema = require('../models/score-weightage.model');
 
 exports.createQuestionAnswer = (req, res, next) => {
     if (req.body instanceof Array) {
-
         req.body.map(async (element, index) => {
             try {
-                console.log(element);
                 const createNew = new QuestionAnswerSchema(element);
                 await createNew.save();
-                console.log(index, req.body.length);
                 if (index === req.body.length - 1) {
                     return res.status(200).json({
                         status: true,
@@ -87,7 +85,7 @@ exports.scoreWeightageByEmpId = async (req, res, next) => {
                 status: true,
                 length: data.length,
                 message: 'no record found'
-            })
+            });
         }
     } catch (error) {
         next(error);
