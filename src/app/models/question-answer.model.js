@@ -21,7 +21,12 @@ const QuestionAnswerSchema = mongoose.Schema({
         enum: ['mental', 'physical', 'social', 'emotional'],
     },
     answerWeightage: {
-        type: Number
+        type: Number,
+        required: true,
+        validate: {
+            validator: Number.isInteger,
+            message: '{VALUE} is not an integer value'
+        }
     },
     totalAttempt: {
         type: Number,
