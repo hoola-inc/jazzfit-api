@@ -30,9 +30,7 @@ const QuestionAnswerSchema = mongoose.Schema({
     totalAttempt: {
         type: Number,
         min: 0,
-        max: 2,
-        required: true
-    }
+        max: 2,    }
 
 }, {
     timestamps: true
