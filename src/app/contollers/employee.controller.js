@@ -70,10 +70,17 @@ exports.getEmpTotalAttempt = async (req, res, next) => {
 
       const totalAttemptsOfEmp = await EmpModel.findOne({ empId: empId }).select('totalAttempt empId');
 
-      return res.status(200).json({
-        status: true,
-        data: totalAttemptsOfEmp
-      });
+      if(totalAttemptsOfEmp) {
+        return res.status(200).json({
+          status: true,
+          data: totalAttemptsOfEmp
+        });
+      } else {
+        return res.status(200).json({
+          status: true,
+          message: 'no record found'
+        });
+      }
 
     } else {
       throw Error('employee id not found');

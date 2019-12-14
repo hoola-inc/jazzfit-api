@@ -6,6 +6,7 @@ exports.createQuestionAnswer = (req, res, next) => {
         req.body.map(async (element, index) => {
             try {
                 const createNew = new QuestionAnswerSchema(element);
+                scoring(element);
                 await createNew.save();
                 if (index === req.body.length - 1) {
                     return res.status(200).json({
@@ -20,10 +21,17 @@ exports.createQuestionAnswer = (req, res, next) => {
     } else {
         return res.status(200).json({
             status: false,
-            message: "Array not found"
+            message: "Array not found!"
         });
     }
 }
+
+scoring = element => {
+    if (element.wellnessType === 'mental') {
+        console.log(element.answerWeightage);
+    }
+}
+
 
 exports.getAllQuestionAnswer = async (req, res, next) => {
     try {

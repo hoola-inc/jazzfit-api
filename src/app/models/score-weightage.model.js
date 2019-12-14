@@ -6,13 +6,32 @@ const ScoreWeightage = mongoose.Schema({
         type: Number,
         ref: 'Employee'
     },
-    wellnessType: {
-        type: String,
-        enum: ['mental', 'physical', 'social', 'emotional'],
+
+    physicalScore: {
+        type: Number,
+        required: true
     },
+
+    emotionalScore: {
+        type: Number,
+        required: true
+    },
+
+    mentalScore: {
+        type: Number,
+        required: true
+    },
+
+    socialScore: {
+        type: Number,
+        required: true
+    },
+
     totalScore: {
-        type: Number
+        type: Number,
+        required: true
     },
+    
     totalAttempt: {
         type: Number,
         min: 0,
