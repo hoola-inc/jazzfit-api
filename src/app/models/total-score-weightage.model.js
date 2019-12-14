@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const ScoreWeightage = mongoose.Schema({
 
     empId: {
-        type: Number
+        type: Number,
+        required: true
     },
 
     physicalScore: {
@@ -33,6 +34,31 @@ const ScoreWeightage = mongoose.Schema({
     totalScore: {
         type: Number,
         default: 0,
+        required: true
+    },
+
+    totalWellnessText: {
+        type: String,
+        required: true
+    },
+
+    mentalWellnessText: {
+        type: String,
+        required: true
+    },
+
+    socialWellnessText: {
+        type: String,
+        required: true
+    },
+
+    emotionalWellnessText: {
+        type: String,
+        required: true
+    },
+
+    physicalWellnessText: {
+        type: String,
         required: true
     },
 
