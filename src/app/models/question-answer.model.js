@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const QuestionAnswerSchema = mongoose.Schema({
 
     empId: {
-        type: Number,
-        ref: 'Employee'
+        type: Number
     },
     questionText: {
         type: String,

@@ -5,5 +5,7 @@ module.exports = app => {
     app.get("/emp", validateToken, empController.getAllUser);
     app.get("/emp/:id", validateToken, empController.getUserById);
     app.get("/emp/totalattempts/:id", validateToken, empController.getEmpTotalAttempt);
-    app.patch('/emp/totalattempts/:id', validateToken, empController.updateEmpTotalAttempt)
+    app.patch('/emp/totalattempts/:id', validateToken, empController.updateEmpTotalAttempt);
+
+    app.get('/refreshtoken', empController.refreshToken);
 };

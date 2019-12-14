@@ -3,8 +3,7 @@ const mongoose = require('mongoose');
 const ScoreWeightage = mongoose.Schema({
 
     empId: {
-        type: Number,
-        ref: 'Employee'
+        type: Number
     },
 
     physicalScore: {

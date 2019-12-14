@@ -70,7 +70,7 @@ exports.getEmpTotalAttempt = async (req, res, next) => {
 
       const totalAttemptsOfEmp = await EmpModel.findOne({ empId: empId }).select('totalAttempt empId');
 
-      if(totalAttemptsOfEmp) {
+      if (totalAttemptsOfEmp) {
         return res.status(200).json({
           status: true,
           data: totalAttemptsOfEmp
@@ -108,6 +108,16 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
+}
+
+exports.refreshToken = (req, res, next) => {
+
+  const token = jwtToken('hoola@hoola.com');
+
+  return res.status(200).json({
+    status: true,
+    token: token
+  });
 }
 
 const jwtToken = email => {
