@@ -111,17 +111,30 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
 }
 
 exports.updateEmpWeight = async (req, res, next) => {
-  // const fileName = req.file.filename;
-  //   const imageUrl = process.env.URL + '/' + fileName;
   try {
     const empId = req.params.id;
-    const updateObject = req.body;
+    let updateObject = {};
+    const weight = req.body.weight;
+
+    if (req.file) {
+      const fileName = req.file.filename;
+      const imageUrl = process.env.URL + fileName;
+      updateObject = {
+        weight: weight,
+        empImage: imageUrl
+      }
+    } else {
+      updateObject = {
+        weight: weight
+      }
+    }
+
     if (empId) {
       await EmpModel.update({ empId: empId }, { $set: updateObject }, { runValidators: true });
 
       return res.status(200).json({
         status: true,
-        message: 'Weight updated successfully'
+        message: 'update successfully'
       });
 
     } else {

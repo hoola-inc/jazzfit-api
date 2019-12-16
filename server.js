@@ -21,7 +21,7 @@ app.use(cors());
 app.use(compression());
 
 // Parse incoming request bodies in a middleware before your handlers, available under the req.body property.
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 app.use(bodyParser.json());
 
