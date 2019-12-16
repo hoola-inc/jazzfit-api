@@ -122,7 +122,7 @@ exports.refreshToken = (req, res, next) => {
 
 const jwtToken = email => {
   const payload = { email: email };
-  const options = { expiresIn: '1d' };
+  const options = { expiresIn: '12h' };
   const secret = process.env.JWT_SECRET;
   const token = jwt.sign(payload, secret, options);
   return token;
