@@ -6,10 +6,7 @@ exports.createUser = async (req, res, next) => {
     if (Object.keys(req.body).length === 0) {
       throw Error('body is null');
     } else {
-      const fileName = req.file.filename;
-      const imageUrl = process.env.URL + '/' +fileName;
       const newUser = new EmpModel(req.body);
-      newUser.empImage = imageUrl;
       const saveUser = await newUser.save();
       const token = jwtToken(req.body.email);
       return res.status(200).json({
@@ -114,6 +111,8 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
 }
 
 exports.updateEmpWeight = async (req, res, next) => {
+  // const fileName = req.file.filename;
+  //   const imageUrl = process.env.URL + '/' + fileName;
   try {
     const empId = req.params.id;
     const updateObject = req.body;
@@ -154,7 +153,6 @@ exports.checkUser = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-
 }
 
 exports.refreshToken = (req, res, next) => {
