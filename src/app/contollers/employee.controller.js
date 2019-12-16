@@ -77,7 +77,7 @@ exports.getEmpTotalAttempt = async (req, res, next) => {
         });
       } else {
         return res.status(200).json({
-          status: true,
+          status: false,
           message: 'no record found'
         });
       }
@@ -108,6 +108,50 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
+}
+
+exports.updateEmpWeight = async (req, res, next) => {
+  try {
+    const empId = req.params.id;
+    const updateObject = req.body;
+    if (empId) {
+      await EmpModel.update({ empId: empId }, { $set: updateObject }, { runValidators: true });
+
+      return res.status(200).json({
+        status: true,
+        message: 'Weight updated successfully'
+      });
+
+    } else {
+      throw Error('Emp id not found');
+    }
+  } catch (error) {
+    next(error);
+  }
+}
+
+exports.checkUser = async (req, res, next) => {
+  try {
+    const empId = req.params.id;
+    const data = await EmpModel.find({
+      empId: empId
+    }).select('totalAttempt empId');
+
+    if (data.length > 0) {
+      return res.status(200).json({
+        status: true,
+        data: data
+      });
+    } else {
+      return res.status(200).json({
+        status: false,
+        message: 'no record found'
+      });
+    }
+  } catch (error) {
+    next(error);
+  }
+
 }
 
 exports.refreshToken = (req, res, next) => {

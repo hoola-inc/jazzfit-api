@@ -181,8 +181,6 @@ async function totalScoreWeightage(totalScore, physicalScore, mentalScore, emoti
         mentalWellnessText = wellnessTextConst.mentalWelness.First;
 
 
-
-
     const addScore = new ScoreSchema({
         empId: empId,
         physicalScore: physicalScore,

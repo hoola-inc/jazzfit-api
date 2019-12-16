@@ -46,8 +46,13 @@ const EmployeeSchema = mongoose.Schema({
     },
     totalAttempt: {
         type: Number,
+        default: 0,
         min: 0,
         max: 2
+    },
+    empImage: {
+        type: String,
+        defalt: ''
     }
 
 }, {

@@ -1,3 +1,5 @@
+// Jazz Fit Diagnostics
+
 module.exports.totalWellness = {
     Fourth: "(Needs critical improvement) You have a significant need to manage your overall well-being. Changes in actions related to your physical, social, emotional and mental dimensions of well-being are necessary. Continued negligence may lead to stress, anxiety, depression, self-image concerns, physical health problems and relationship issues, with people at home and at work",
     Third: "(Needs improvement) Your wellbeing needs attention; Some dimensions of your life need to be worked on. Without addressing them, you may have to face adverse consequences related to health, stress, anxiety, relationships and self-image. Please read the summary of your results and make use of the recommendations provided.",
@@ -33,4 +35,17 @@ module.exports.socialWelness = {
     First: "You are excellent at managing your social well-being. Nonetheless, you may look up methods to specifically address the areas which may need some improvement. Other than that, your focus should be on maintaining the practices you partake in currently. Note: Detailed recommendations will be given (covered in the next segment)"
 }
 
+// Recommendations against each score
 
+module.exports.physical = {
+    Q: "I get 7-8 hours of sleep everyday (sleep)",
+    A: "Never- Sometimes",
+    title: "Sleep is essential for your physical wellbeing. On-going sleep deficiency can add to your stress and anxieties. Here are a few tips that can help you get good sleep.",
+    recommendation:
+        [
+            {
+                title: "Avoid Caffeine",
+                text: "Limit yourself to just one cup of caffeinated coffee at breakfast, or drink decaf. Too much caffeine in the morning can stay with you until bedtime. (If you're used to drinking several cups of coffee a day, wean yourself off it gradually over a few weeks.)"
+            }
+        ]
+}
