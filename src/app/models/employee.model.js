@@ -52,7 +52,7 @@ const EmployeeSchema = mongoose.Schema({
     },
     empImage: {
         type: String,
-        defalt: ''
+        default: ''
     }
 
 }, {

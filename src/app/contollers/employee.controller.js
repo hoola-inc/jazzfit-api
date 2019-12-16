@@ -6,7 +6,10 @@ exports.createUser = async (req, res, next) => {
     if (Object.keys(req.body).length === 0) {
       throw Error('body is null');
     } else {
+      const fileName = req.file.filename;
+      const imageUrl = process.env.URL + '/' +fileName;
       const newUser = new EmpModel(req.body);
+      newUser.empImage = imageUrl;
       const saveUser = await newUser.save();
       const token = jwtToken(req.body.email);
       return res.status(200).json({

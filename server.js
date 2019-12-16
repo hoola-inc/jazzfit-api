@@ -46,6 +46,9 @@ require('./src/utilities/routes.utils')(app);
 // logger 
 require('./src/config/logger.config');
 
+const publicDir = require('path').join(__dirname, './public/img');
+app.use(express.static(publicDir));
+
 // Handling non-existing routes
 require('./src/utilities/error-handler.utils')(app);
 
