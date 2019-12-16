@@ -133,13 +133,7 @@ async function totalScoreWeightage(totalScore, physicalScore, mentalScore, emoti
 
     totalScore = physicalScore + mentalScore + emotionalScore + socialScore;
 
-    totalScore = totalScore / 2;
-    physicalScore = physicalScore / 2;
-    emotionalScore = emotionalScore / 2;
-    mentalScore = mentalScore / 2;
-    socialScore = socialScore / 2;
-
-
+    totalScore = totalScore / 4;
 
     if (totalScore > 0 && totalScore <= 25)
         totalWellnessText = wellnessTextConst.totalWellness.Fourth;
