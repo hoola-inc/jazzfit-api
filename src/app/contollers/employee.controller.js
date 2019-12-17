@@ -128,17 +128,17 @@ exports.updateEmpWeight = async (req, res, next) => {
         weight: weight
       }
     }
-
-    if (empId) {
-      await EmpModel.update({ empId: empId }, { $set: updateObject }, { runValidators: true });
-
+    const checkEmp = await EmpModel.findOne({ empId: empId });
+    if (checkEmp && empId) {
+      await EmpModel.updateOne({ empId: empId }, { $set: updateObject }, { runValidators: true });
+      
       return res.status(200).json({
         status: true,
-        message: 'update successfully'
+        data: 'updated'
       });
 
     } else {
-      throw Error('Emp id not found');
+      throw Error('Emp id not found ' + empId);
     }
   } catch (error) {
     next(error);
