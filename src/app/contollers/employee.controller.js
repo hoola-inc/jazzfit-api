@@ -97,10 +97,10 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
     const checkEmp = await EmpModel.findOne({ empId: empId });
     if (checkEmp && empId) {
       await EmpModel.update({ empId: empId }, { $set: updateObject }, { runValidators: true });
-
+      const data = await EmpModel.findOne({ empId: empId });
       return res.status(200).json({
         status: true,
-        message: 'Attempts updated successfully'
+        data: data
       });
 
     } else {
@@ -132,10 +132,10 @@ exports.updateEmpWeight = async (req, res, next) => {
     const checkEmp = await EmpModel.findOne({ empId: empId });
     if (checkEmp && empId) {
       await EmpModel.updateOne({ empId: empId }, { $set: updateObject }, { runValidators: true });
-      
+      const data = await EmpModel.findOne({ empId: empId });
       return res.status(200).json({
         status: true,
-        data: 'updated'
+        data: data
       });
 
     } else {
