@@ -37,10 +37,10 @@ exports.createQuestionAnswer = (req, res, next) => {
 
                 if (index === req.body.length - 1) {
                     totalScore = await totalScoreWeightage(totalScore, physicalScore, mentalScore, emotionalScore, socialScore, empId, totalAttempt);
-
+                    const data = await QuestionAnswerSchema.find({ empId: empId });
                     return res.status(200).json({
                         status: true,
-                        message: 'Saved Successfully'
+                        data: data
                     });
                 }
             } catch (error) {
