@@ -46,7 +46,7 @@ exports.getUserById = async (req, res, next) => {
     const findUserById = await EmpModel.find({
       empId: empId
     });
-    if (findUserById) {
+    if (findUserById.length > 0) {
       return res.status(200).json({
         status: true,
         data: findUserById

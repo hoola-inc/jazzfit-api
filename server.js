@@ -6,11 +6,11 @@ const morgan = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
-const multer = require('multer');
 const env = require('dotenv');
 const app = express();
 const winston = require('winston');
 const cool = require('cool-ascii-faces');
+require('./src/utilities/create-file.utils');
 
 // init env var
 env.config();
