@@ -1,15 +1,12 @@
 const SurveyOne = require('../models/questions-survey-one.model');
+const response = require('../../utilities/reponse.utils');
 
 exports.questions = async (req, res, next) => {
 
     try {
         const createQuestion = new SurveyOne(req.body);
         await createQuestion.save();
-
-        return res.status(200).json({
-            status: true,
-            data: createQuestion
-        });
+        response.SUCCESS(res, createQuestion);
     } catch (error) {
         next(error);
     }
@@ -18,10 +15,5 @@ exports.questions = async (req, res, next) => {
 
 exports.getAllQuestions = async (req, res, next) => {
     const data = await SurveyOne.find();
-    console.log(req.ip);
-    return res.status(200).json({
-        status: true,
-        length: data.length,
-        data: data
-    })
+    response.GETSUCCESS(res, data);
 }

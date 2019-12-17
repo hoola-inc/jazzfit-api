@@ -1,4 +1,5 @@
 const EmpModel = require("../models/employee.model");
+const response = require('../../utilities/reponse.utils');
 const jwt = require('jsonwebtoken');
 
 exports.createUser = async (req, res, next) => {
@@ -9,11 +10,7 @@ exports.createUser = async (req, res, next) => {
       const newUser = new EmpModel(req.body);
       const saveUser = await newUser.save();
       const token = jwtToken(req.body.email);
-      return res.status(200).json({
-        status: true,
-        data: saveUser,
-        jwtToken: token
-      });
+      response.AUTHSUCCESS(res, saveUser, token);
     }
   } catch (error) {
     next(error);
@@ -23,18 +20,10 @@ exports.createUser = async (req, res, next) => {
 exports.getAllUser = async (req, res, next) => {
   try {
     const getAllUser = await EmpModel.find();
-    if (getAllUser.length > 0) {
-      return res.status(200).json({
-        status: true,
-        length: getAllUser.length,
-        data: getAllUser
-      });
-    } else {
-      return res.status(200).json({
-        status: false,
-        message: "not record found"
-      });
-    }
+    if (getAllUser.length > 0)
+      response.GETSUCCESS(res, getAllUser);
+    else
+      throw Error('no record found');
   } catch (error) {
     next(error);
   }
@@ -46,17 +35,11 @@ exports.getUserById = async (req, res, next) => {
     const findUserById = await EmpModel.find({
       empId: empId
     });
-    if (findUserById.length > 0) {
-      return res.status(200).json({
-        status: true,
-        data: findUserById
-      });
-    } else {
-      return res.status(200).json({
-        status: false,
-        message: "not user found by id: " + empId
-      });
-    }
+    if (findUserById.length > 0)
+      response.GETSUCCESS(res, findUserById);
+    else
+      throw Error('Emp id not found ' + empId);
+
   } catch (error) {
     next(error);
   }
@@ -70,17 +53,10 @@ exports.getEmpTotalAttempt = async (req, res, next) => {
 
       const totalAttemptsOfEmp = await EmpModel.findOne({ empId: empId }).select('totalAttempt empId');
 
-      if (totalAttemptsOfEmp) {
-        return res.status(200).json({
-          status: true,
-          data: totalAttemptsOfEmp
-        });
-      } else {
-        return res.status(200).json({
-          status: false,
-          message: 'no record found'
-        });
-      }
+      if (totalAttemptsOfEmp)
+        response.SUCCESS(res, totalAttemptsOfEmp);
+      else
+        throw Error('Emp id not found ' + empId);
 
     } else {
       throw Error('employee id not found');
@@ -98,10 +74,7 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
     if (checkEmp && empId) {
       await EmpModel.update({ empId: empId }, { $set: updateObject }, { runValidators: true });
       const data = await EmpModel.findOne({ empId: empId });
-      return res.status(200).json({
-        status: true,
-        data: data
-      });
+      response.SUCCESS(res, data);
 
     } else {
       throw Error('Emp id not found ' + empId);
@@ -133,13 +106,10 @@ exports.updateEmpWeight = async (req, res, next) => {
     if (checkEmp && empId) {
       await EmpModel.updateOne({ empId: empId }, { $set: updateObject }, { runValidators: true });
       const data = await EmpModel.findOne({ empId: empId });
-      return res.status(200).json({
-        status: true,
-        data: data
-      });
+      response.SUCCESS(res, data);
 
     } else {
-      throw Error('Emp id not found ' + empId);
+      throw Error('Emp not found with id ' + empId);
     }
   } catch (error) {
     next(error);
@@ -170,21 +140,18 @@ exports.checkUser = async (req, res, next) => {
 }
 
 exports.refreshToken = async (req, res, next) => {
-  const empId = req.params.id;
-  const token = jwtToken('hoola@hoola.com');
-  const data = await EmpModel.findOne({ empId: empId });
-  if(data) {
-    return res.status(200).json({
-      status: true,
-      token: token
-    });
-  } else {
-    return res.status(200).json({
-      status: false,
-      message: 'emp not exist ' + empId
-    })
+  try {
+    const empId = req.params.id;
+    const token = jwtToken('hoola@hoola.com');
+    const data = await EmpModel.findOne({ empId: empId });
+    if (data) {
+      response.SUCCESS(res, token);
+    } else {
+      throw Error('emp not found with id ' + empId);
+    }
+  } catch (error) {
+    next(error);
   }
-  
 }
 
 const jwtToken = email => {

@@ -1,6 +1,7 @@
 const QuestionAnswerSchema = require('../models/question-answer.model');
 const ScoreSchema = require('../models/total-score-weightage.model');
 const wellnessTextConst = require('../../constants/main.constant');
+const response = require('../../utilities/reponse.utils');
 
 exports.createQuestionAnswer = (req, res, next) => {
 
@@ -38,20 +39,14 @@ exports.createQuestionAnswer = (req, res, next) => {
                 if (index === req.body.length - 1) {
                     totalScore = await totalScoreWeightage(totalScore, physicalScore, mentalScore, emotionalScore, socialScore, empId, totalAttempt);
                     const data = await QuestionAnswerSchema.find({ empId: empId });
-                    return res.status(200).json({
-                        status: true,
-                        data: data
-                    });
+                    response.SUCCESS(res, data);
                 }
             } catch (error) {
                 next(error);
             }
         });
     } else {
-        return res.status(200).json({
-            status: false,
-            message: "Array not found!"
-        });
+        throw Error('Array not found');
     }
 }
 
@@ -60,18 +55,11 @@ exports.createQuestionAnswer = (req, res, next) => {
 exports.getAllQuestionAnswer = async (req, res, next) => {
     try {
         const getAllQA = await QuestionAnswerSchema.find();
-        if (getAllQA.length > 0) {
-            return res.status(200).json({
-                status: true,
-                length: getAllQA.length,
-                data: getAllQA
-            })
-        } else {
-            return res.status(200).json({
-                status: false,
-                message: 'no record found!'
-            })
-        }
+        if (getAllQA.length > 0)
+            response.GETSUCCESS(res, getAllQA);
+        else
+            throw Error('no record found');
+
     } catch (error) {
         next(error);
     }
@@ -84,18 +72,11 @@ exports.scoreWeightage = async (req, res, next) => {
             empId: req.body.empId
         }).select('wellnessType empId answerWeightage');
 
-        if (data.length > 0) {
-            return res.status(200).json({
-                status: true,
-                length: data.length,
-                data: data
-            })
-        } else {
-            return res.status(200).json({
-                status: true,
-                message: 'no record found'
-            })
-        }
+        if (data.length > 0)
+            response.GETSUCCESS(res, data);
+        else
+            throw Error('no record found')
+
     } catch (error) {
         next(error);
     }
@@ -107,18 +88,11 @@ exports.scoreWeightageByEmpId = async (req, res, next) => {
             empId: req.params.id
         });
 
-        if (data.length > 0) {
-            return res.status(200).json({
-                status: true,
-                data: data
-            })
-        } else {
-            return res.status(200).json({
-                status: true,
-                length: data.length,
-                message: 'no record found'
-            });
-        }
+        if (data.length > 0)
+            response.SUCCESS(res, data);
+        else
+            throw Error('no record found');
+
     } catch (error) {
         next(error);
     }
