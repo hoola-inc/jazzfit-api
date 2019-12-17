@@ -169,14 +169,22 @@ exports.checkUser = async (req, res, next) => {
   }
 }
 
-exports.refreshToken = (req, res, next) => {
-
+exports.refreshToken = async (req, res, next) => {
+  const empId = req.params.id;
   const token = jwtToken('hoola@hoola.com');
-
-  return res.status(200).json({
-    status: true,
-    token: token
-  });
+  const data = await EmpModel.findOne({ empId: empId });
+  if(data) {
+    return res.status(200).json({
+      status: true,
+      token: token
+    });
+  } else {
+    return res.status(200).json({
+      status: false,
+      message: 'emp not exist ' + empId
+    })
+  }
+  
 }
 
 const jwtToken = email => {

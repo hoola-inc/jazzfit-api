@@ -8,7 +8,7 @@ module.exports = app => {
     app.get('/emp/totalattempts/:id', validateToken, empController.getEmpTotalAttempt);
     app.patch('/emp/totalattempts/:id', validateToken, empController.updateEmpTotalAttempt);
     app.patch('/emp/weight/:id', type, validateToken, empController.updateEmpWeight);
-    app.get('/refreshtoken', empController.refreshToken);
+    app.get('/refreshtoken/:id', empController.refreshToken);
     app.get('/checkemp/:id', empController.checkUser);
 };
 
