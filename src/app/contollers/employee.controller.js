@@ -94,7 +94,8 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
   try {
     const empId = req.params.id;
     const updateObject = req.body;
-    if (empId) {
+    const checkEmp = await EmpModel.findOne({ empId: empId });
+    if (checkEmp && empId) {
       await EmpModel.update({ empId: empId }, { $set: updateObject }, { runValidators: true });
 
       return res.status(200).json({
@@ -103,7 +104,7 @@ exports.updateEmpTotalAttempt = async (req, res, next) => {
       });
 
     } else {
-      throw Error('Emp id not found');
+      throw Error('Emp id not found ' + empId);
     }
   } catch (error) {
     next(error);
