@@ -1,7 +1,8 @@
 const QuestionAnswerSchema = require('../models/question-answer.model');
 const ScoreSchema = require('../models/total-score-weightage.model');
-const wellnessTextConst = require('../../constants/main.constant');
+const wellnessTextConst = require('../../constants/main.constants');
 const response = require('../../utilities/reponse.utils');
+const recommendation = require('../../utilities/recommendations.utils');
 
 exports.createQuestionAnswer = (req, res, next) => {
 
@@ -33,7 +34,7 @@ exports.createQuestionAnswer = (req, res, next) => {
                     default:
                         break;
                 }
-
+                recommendation.recommendations(element);
                 await createNew.save();
 
                 if (index === req.body.length - 1) {
@@ -119,40 +120,40 @@ async function totalScoreWeightage(totalScore, physicalScore, mentalScore, emoti
         totalWellnessText = wellnessTextConst.totalWellness.First;
 
     if (physicalScore > 0 && physicalScore <= 25)
-        physicalWellnessText = wellnessTextConst.physicalWelness.Fourth;
+        physicalWellnessText = wellnessTextConst.physicalWellness.Fourth;
     if (physicalScore > 25 && physicalScore <= 50)
-        physicalWellnessText = wellnessTextConst.physicalWelness.Third;
+        physicalWellnessText = wellnessTextConst.physicalWellness.Third;
     if (physicalScore > 50 && physicalScore <= 75)
-        physicalWellnessText = wellnessTextConst.physicalWelness.Second;
+        physicalWellnessText = wellnessTextConst.physicalWellness.Second;
     if (physicalScore > 75 && physicalScore <= 100)
-        physicalWellnessText = wellnessTextConst.physicalWelness.First;
+        physicalWellnessText = wellnessTextConst.physicalWellness.First;
 
     if (emotionalScore > 0 && emotionalScore <= 25)
-        emotionalWellnessText = wellnessTextConst.emotionalWelness.Fourth;
+        emotionalWellnessText = wellnessTextConst.emotionalWellness.Fourth;
     if (emotionalScore > 25 && emotionalScore <= 50)
-        emotionalWellnessText = wellnessTextConst.emotionalWelness.Third;
+        emotionalWellnessText = wellnessTextConst.emotionalWellness.Third;
     if (emotionalScore > 50 && emotionalScore <= 75)
-        emotionalWellnessText = wellnessTextConst.emotionalWelness.Second;
+        emotionalWellnessText = wellnessTextConst.emotionalWellness.Second;
     if (emotionalScore > 75 && emotionalScore <= 100)
-        emotionalWellnessText = wellnessTextConst.emotionalWelness.First;
+        emotionalWellnessText = wellnessTextConst.emotionalWellness.First;
 
     if (socialScore > 0 && socialScore <= 25)
-        socialWellnessText = wellnessTextConst.socialWelness.Fourth;
+        socialWellnessText = wellnessTextConst.socialWellness.Fourth;
     if (socialScore > 25 && socialScore <= 50)
-        socialWellnessText = wellnessTextConst.socialWelness.Third;
+        socialWellnessText = wellnessTextConst.socialWellness.Third;
     if (socialScore > 50 && socialScore <= 75)
-        socialWellnessText = wellnessTextConst.socialWelness.Second;
+        socialWellnessText = wellnessTextConst.socialWellness.Second;
     if (socialScore > 75 && socialScore <= 100)
-        socialWellnessText = wellnessTextConst.socialWelness.First;
+        socialWellnessText = wellnessTextConst.socialWellness.First;
 
     if (mentalScore > 0 && mentalScore <= 25)
-        mentalWellnessText = wellnessTextConst.mentalWelness.Fourth;
+        mentalWellnessText = wellnessTextConst.mentalWellness.Fourth;
     if (mentalScore > 25 && mentalScore <= 50)
-        mentalWellnessText = wellnessTextConst.mentalWelness.Third;
+        mentalWellnessText = wellnessTextConst.mentalWellness.Third;
     if (mentalScore > 50 && mentalScore <= 75)
-        mentalWellnessText = wellnessTextConst.mentalWelness.Second;
+        mentalWellnessText = wellnessTextConst.mentalWellness.Second;
     if (mentalScore > 75 && mentalScore <= 100)
-        mentalWellnessText = wellnessTextConst.mentalWelness.First;
+        mentalWellnessText = wellnessTextConst.mentalWellness.First;
 
 
     const addScore = new ScoreSchema({
