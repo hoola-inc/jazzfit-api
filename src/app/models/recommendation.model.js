@@ -20,10 +20,17 @@ const Recommendation = mongoose.Schema({
         type: String
     },
     recommendationTitle: String,
+    
     recommendation: [{
         title: String,
         detail: String
-    }]
+    }],
+    totalAttempt: {
+        type: Number,
+        default: 0,
+        min: 0,
+        max: 2
+    }
 
 }, {
     timestamps: true

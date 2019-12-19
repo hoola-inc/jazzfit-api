@@ -170,25 +170,29 @@ function emotionalRecommendations(emotionalElement) {
 }
 
 function defaultObj(element) {
-    const obj = {};
+    let obj = {};
     obj = {
         recommendationTitle: 'Great Job',
         empId: element.empId,
         question: element.questionText,
         answer: element.answerText,
-        recommendation: []
+        recommendation: [],
+        wellnessType: element.wellnessType,
+        totalAttempt: element.totalAttempt
     }
     saveRecommendation(obj);
 }
 
 function createObj(recommendationTitle, recommendationArr, element) {
-    const obj = {};
+    let obj = {};
     obj = {
         recommendationTitle: recommendationTitle,
         empId: element.empId,
         question: element.questionText,
         answer: element.answerText,
-        recommendation: recommendationArr
+        recommendation: recommendationArr,
+        wellnessType: element.wellnessType,
+        totalAttempt: element.totalAttempt
     }
     saveRecommendation(obj);
 }
