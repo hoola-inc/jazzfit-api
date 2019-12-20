@@ -81,14 +81,14 @@ function mentalRecommendations(mentalElement) {
         if (mentalElement.answerText === 'No')
             createObj(mentalRecommendationsConst.Questiontfour.recommendationTitle, mentalRecommendationsConst.Questiontfour.recommendationArr, mentalElement);
         else
-            defaultObj();
+            defaultObj(mentalElement);
     }
 
     if (mentalElement.questionText === mentalRecommendationsConst.Questiontfive.questionTitle) {
         if (mentalElement.answerText === 'Never' || mentalElement.answerText === 'Sometimes')
             createObj(mentalRecommendationsConst.Questiontfive.recommendationTitle, mentalRecommendationsConst.Questiontfive.recommendationArr, mentalElement);
         else
-            defaultObj();
+            defaultObj(mentalElement);
     }
 
 }

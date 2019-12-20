@@ -8,7 +8,7 @@ exports.SUCCESS = (res, data) => {
 exports.GETSUCCESS = (res, data) => {
     return res.status(200).json({
         status: true,
-        lenght: data.lenght,
+        lenght: data.length,
         data: data
     });
 }

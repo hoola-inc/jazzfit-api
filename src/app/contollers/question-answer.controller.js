@@ -40,7 +40,7 @@ exports.createQuestionAnswer = (req, res, next) => {
                 if (index === req.body.length - 1) {
                     totalScore = await totalScoreWeightage(totalScore, physicalScore, mentalScore, emotionalScore, socialScore, empId, totalAttempt);
                     const data = await QuestionAnswerSchema.find({ empId: empId });
-                    response.SUCCESS(res, data);
+                    response.GETSUCCESS(res, data);
                 }
             } catch (error) {
                 next(error);
