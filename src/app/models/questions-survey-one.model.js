@@ -3,7 +3,10 @@ const mongoose = require('mongoose');
 const SurveyOne = mongoose.Schema({
 
     question: String,
-    answer: [String],
+    answer: [{
+        answerText: String,
+        answerWeightage: Number
+    }],
     welnessType: {
         type: String,
         enum: ['mental', 'physical', 'social', 'emotional']

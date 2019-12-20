@@ -106,6 +106,11 @@ async function totalScoreWeightage(totalScore, physicalScore, mentalScore, emoti
     let socialWellnessText = '';
     let mentalWellnessText = '';
 
+    physicalScore = physicalScore / 5;
+    mentalScore = mentalScore / 5;
+    emotionalScore = emotionalScore / 5;
+    socialScore = socialScore / 5;
+
     totalScore = physicalScore + mentalScore + emotionalScore + socialScore;
 
     totalScore = totalScore / 4;

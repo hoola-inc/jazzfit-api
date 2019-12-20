@@ -142,7 +142,7 @@ module.exports.physicalRecommendations = {
 module.exports.emotionalRecommendations = {
 
     QuestionOne: {
-        questionTitle: "I often find myself worrying about the future",
+        questionTitle: "I find myself worrying about the future",
         recommendationTitle: "Constantly worrying about the future is the major source of anxiety in people. One of the reasons for this is one’s inability to think in the present.",
         recommendationArr: [
             {
@@ -172,7 +172,7 @@ module.exports.emotionalRecommendations = {
     },
 
     QuestionThree: {
-        questionTitle: "There is often a big gap between what I say and what I do",
+        questionTitle: "There is a big gap between what I say and what I do",
         recommendationTitle: "Dissonance between what one believes and what one does is another major source of stress in people. Not doing what we believe in eventually makes one go into self-loathing and eventually makes one weak",
         recommendationArr: [
             {
@@ -349,7 +349,7 @@ module.exports.socialRecommendations = {
 module.exports.mentalRecommendations = {
 
     Questionone: {
-        questionTitle: "I often get distracted easily",
+        questionTitle: "I get distracted easily",
         recommendationTitle: "Lack of focus leads to stress. It’s essential to take a pause and understand what needs to be done.",
         recommendationArr: [
             {
@@ -391,7 +391,7 @@ module.exports.mentalRecommendations = {
     },
 
     Questionthree: {
-        questionTitle: "I often come up with creative solutions to problems",
+        questionTitle: "I come up with creative solutions to problems",
         recommendationTitle: "Creativity is essential for your work at Jazz. To remain number 1, your work needs to speak for itself.",
         recommendationArr: [
             {
