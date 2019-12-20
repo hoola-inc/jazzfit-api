@@ -14,8 +14,6 @@ exports.questions = async (req, res, next) => {
 }
 
 exports.getAllQuestions = async (req, res, next) => {
-    const data = await SurveyOne.find({
-        welnessType: req.params.name
-    });
+    const data = await SurveyOne.find();
     response.GETSUCCESS(res, data);
 }
