@@ -20,7 +20,7 @@ const Recommendation = mongoose.Schema({
         type: String
     },
     recommendationTitle: String,
-    
+    serial: Number,
     recommendation: [{
         title: String,
         detail: String

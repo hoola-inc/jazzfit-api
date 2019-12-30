@@ -58,7 +58,8 @@ module.exports.physicalRecommendations = {
                 title: "Use light to your advantage",
                 detail: "Natural light keeps your internal clock on a healthy sleep-wake cycle. So let in the light first thing in the morning and get out of the office for a sun break during the day."
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr: ["A well slept mind is a healthy mind - and you seem to be taking good care of it! Not only will this habit help you fight away your stress and anxiety, but is overall great for your physical well being too!"]
     },
     QuestionTwo: {
         questionTitle: "I eat a healthy breakfast everyday",
@@ -80,7 +81,8 @@ module.exports.physicalRecommendations = {
                 title: "Nutrition Awareness session",
                 detail: "Register yourself for a Nutrition Awareness session"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr: ["A healthy breakfast is the key to start your day- and you seem to know that very well! By sticking to a healthy breakfast habit, you are reducing your chances of  obesity, high blood pressure, heart disease, diabetes and ensuring long term health benefits! "]
     },
     QuestionThree: {
         questionTitle: "I exercise at least three days every week",
@@ -94,7 +96,8 @@ module.exports.physicalRecommendations = {
                 title: "Exercise combats health conditions and diseases",
                 detail: "Choose activities that are fun, not exhausting. Add variety. Develop a repertoire of several activities that you can enjoy. That way, exercise will never seem boring or routine. Exercise boosts high-density lipoprotein (HDL) cholesterol, the 'good' cholesterol, and it decreases unhealthy triglycerides. This keeps your blood flowing smoothly, which decreases your risk of cardiovascular diseases."
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["Staying fit is on your agenda, and that is great! By opting for a consistent amount of exercise, you are not only balancing your weight but rather you are improving the quality of your life and enhancing your mind and body health! "]
     },
     QuestionFour: {
         questionTitle: "I drink at least 8 glasses of water every day",
@@ -116,7 +119,8 @@ module.exports.physicalRecommendations = {
                 title: "Keep a gallon jug nearby",
                 detail: "It’s easy to remember to fill up on water when the source is nearby. Keep a gallon jug or large carafe at your desk, by the bed at home, and on the kitchen counter as a constant reminder to drink up. The more you have to look at that water jug, the more you'll remember to fill it and drink it."
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You are glowing! By consuming a sufficient amount of water everyday, you are helping your digestive mechanism work its best along with keeping your body healthy and hydrated!"]
     },
     QuestionFive: {
         questionTitle: "I smoke cigarettes/vapes/sheesha",
@@ -134,7 +138,8 @@ module.exports.physicalRecommendations = {
                 title: "Delay",
                 detail: "If you feel like you're going to give in to your tobacco craving, tell yourself that you must first wait 10 more minutes — and then do something to distract yourself for that period of time. Try going to a public, smoke-free zone. These simple tricks may be enough to derail your tobacco craving."
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["Take a bow and be proud of yourself! By saying no to cigarettes, you are not only mitigating your chances for heart attacks, strokes and chronic obstructive pulmonary diseases but also adding ----- years to your life! "]
     }
 }
 
@@ -153,7 +158,8 @@ module.exports.emotionalRecommendations = {
                 title: "Enrolling in a Take Control Stress Management Workshop",
                 detail: "will allow you to identify your stressors and ways of dealing with them"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You are an in-the-moment person, and thinking about unalterable actions of the future does not faze you. Keeping this up will help you remain non anxious in the long run! "]
     },
 
     QuestionTwo: {
@@ -168,7 +174,8 @@ module.exports.emotionalRecommendations = {
                 title: "Opting for a Take Control Mind Over Matter workshop",
                 detail: "can help give you structure in this respect."
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You love the work that you do and it doesn’t get any better than that! You are aware of the contribution that you make everyday to your firm, your goals and yourself, and fully realise the difference that you are helping to create in the world. More power to you! "]
     },
 
     QuestionThree: {
@@ -183,7 +190,8 @@ module.exports.emotionalRecommendations = {
                 title: "Control Stress Management",
                 detail: "Attend a Take Control Stress Management workshop"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["Your actions and thoughts are aligned, and you are on a roll! You possess a high level of emotional intelligence and are able to manifest your ideas and passion in a constructive manner to get the results that you desire. This makes you an individual with a strong and stress free mind. Good going! "]
     },
 
     Questionfour: {
@@ -195,7 +203,8 @@ module.exports.emotionalRecommendations = {
                 detail: "A Take Control Mind Over Matter workshop can enable you to differentiate between the two mindsets and give you the tools to make the transition from fixed to growth."
             }
 
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You are determined to try new things and are not afraid to take risks. You do not like to restrict yourself and your imagination, and love exploring the new opportunities that lie ahead. You possess the confidence to venture into the "]
     },
 
     Questionfive: {
@@ -207,9 +216,9 @@ module.exports.emotionalRecommendations = {
                 detail: "Anger is a result of having little impulse control plus perceiving the surrounding environment as hostile or unjust. In order to make yourself less prone to getting angry you will have to work on both elements; a Take Control Mind Over Matter workshop will enable you to not only understand yourself better but also challenge your perceptions about others around you."
             }
 
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["Patience and good sense are the virtues that you stand by, and this helps you to have a strong impulse control. You not only have a strong ability to control your actions, but you also possess a high power of emotion regulation. That is a sign of a wise mind! "]
     }
-
 }
 
 module.exports.socialRecommendations = {
@@ -237,7 +246,8 @@ module.exports.socialRecommendations = {
                 title: "Social Quotient workshop ",
                 detail: "Attend a Take Control Social Quotient workshop"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You are an emotionally intelligent individual which gives you a high understanding of your surroundings and the people around you. This is a vital skill for the modern workplace for the environment and will take you a long way ahead. "]
     },
 
     Questiontwo: {
@@ -257,7 +267,8 @@ module.exports.socialRecommendations = {
                 detail: "Attend a Take Control Stress management workshop"
             }
 
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You strike a good work life balance and know the importance of keeping up with human connections alongside your professional commitments. This helps to regulate your stress and puts you high on the ladder of social well being. "]
     },
 
     Questionthree: {
@@ -285,7 +296,8 @@ module.exports.socialRecommendations = {
                 detail: "Attend a Take control Social Quotient"
             }
 
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You possess a high level of consideration for people in your surroundings and do not hold back any praise for other people. You are a highly secure individual and make an effort to uplift other people by reinforcing their positive behaviour. You are a keeper! "]
     },
 
     Questiontfour: {
@@ -313,7 +325,8 @@ module.exports.socialRecommendations = {
                 detail: "It might seem obvious, but you can also build confidence by learning more. Read more books, watch more TED talks, attend more seminars. It's easy to go overboard, and spouting your knowledge too often can be a confidence killer when people who have greater knowledge on the subject start debating with you, but knowing what to do about a complex issue or problem can help you gain confidence. Confidence grows when you act on what you know."
             }
 
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You maintain a healthy level of self esteem which is why you are able to share your achievements with the world. You have confidence in your abilities and are not afraid to speak your mind. Keep it up! "]
     },
 
     Questiontfive: {
@@ -340,10 +353,9 @@ module.exports.socialRecommendations = {
                 title: "Social Quotient workshop",
                 detail: "Attend a Take Control Social Quotient workshop"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["Your ability to resolve conflicts is a testament to your great communication skills. You are a natural problem solver and have the capability to lead you and your teams out of tight spots and tricky situations. Way to go! "]
     }
-
-
 }
 
 module.exports.mentalRecommendations = {
@@ -368,7 +380,8 @@ module.exports.mentalRecommendations = {
                 title: "Stress Management workshop",
                 detail: "Attend a Take Control Stress Management workshop"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["Your ability to focus is phenomenal!  You can channel your energies in one direction and give it your all to attain the desired results. This helps to reduce work stress and to improve the work output quality. "]
     },
 
     Questiontwo: {
@@ -387,7 +400,8 @@ module.exports.mentalRecommendations = {
                 title: "Mind Over Matter workshop",
                 detail: "Attend a Take Control Mind Over Matter workshop"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You thrive on the ideology of improving yourself everyday and are able to see the bigger picture behind small actions. This clarity helps you to stress less about your goals and pushes you to strive towards achieving the greater vision"]
     },
 
     Questionthree: {
@@ -402,7 +416,8 @@ module.exports.mentalRecommendations = {
                 title: "Mind Over Matter workshop",
                 detail: "Attend a Take Control Mind Over Matter workshop"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You are full of new ideas and you are not not afraid to show it! By adding new flavour to conventional methods at work, you are someone who can integrate the new with old to improve the work quality. Keep the creativity flowing! "]
     },
 
     Questiontfour: {
@@ -417,7 +432,8 @@ module.exports.mentalRecommendations = {
                 title: "Stress Management workshop ",
                 detail: "Attend a Take Control Stress Management workshop"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You are a hard worker who knows when to take a break. You realise the importance of recharging your mind and making time for activities and interpersonal connections that help you relax. Keep up this practice for better work quality and a healthier you! "]
     },
 
     Questiontfive: {
@@ -440,7 +456,8 @@ module.exports.mentalRecommendations = {
                 title: "Matter workshop",
                 detail: "Attend a Take Control Mind Over Matter workshop"
             }
-        ]
+        ],
+        recommendationForCorrectAnswerArr:["You are a planner! Your thoughts are well organised and this translates into your actions Your meticulous preparation for any sort of situation makes you the person to be relied upon and hence - an asset to your company! "]
     }
 
 }
