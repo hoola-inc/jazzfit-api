@@ -55,7 +55,6 @@ require('./src/utilities/error-handler.utils')(app);
 // db config
 require('./src/config/db.config');
 
-
 const port = process.env.PORT;
 app.listen(port, () => {
     console.log(`%s Server is listening on port ${port}`, chalk.green('✓'));

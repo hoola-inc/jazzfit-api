@@ -18,3 +18,21 @@ exports.findAllRecommendation = async (req, res, next) => {
         next(error);
     }
 }
+
+exports.allRecommendations = async (req, res, next) => {
+    try {
+        const empId = req.params.id;
+        const data = await recommendationModel.find(
+            {
+                empId: empId
+            }
+        );
+        if (data.length > 0) {
+            response.GETSUCCESS(res, data);
+        } else {
+            throw Error('no record found');
+        }
+    } catch (error) {
+        next(error);
+    }
+}

@@ -9,7 +9,7 @@ exports.total = async (req, res, next) => {
         if (data.length > 0)
             response.GETSUCCESS(res, data);
         else
-            throw Error('no record found ');
+            throw Error('no record found! ');
 
     } catch (error) {
         next(error);
