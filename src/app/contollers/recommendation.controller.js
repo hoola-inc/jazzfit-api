@@ -1,5 +1,6 @@
 const recommendationModel = require('../models/recommendation.model');
 const response = require('../../utilities/reponse.utils');
+const sortBy = require('lodash').sortBy;
 
 exports.findAllRecommendation = async (req, res, next) => {
     try {
@@ -10,8 +11,12 @@ exports.findAllRecommendation = async (req, res, next) => {
             wellnessType: wellnessType
         });
 
-        if (data.length > 0)
-            response.GETSUCCESS(res, data);
+        if (data.length > 0) {
+            // console.log('here ...');
+            // data.sort();
+            // console.log(data.sort());
+            response.GETSUCCESS(res, sortBy(data, 'serialNumber'));
+        }
         else
             throw Error('no record found');
     } catch (error) {
@@ -28,7 +33,7 @@ exports.allRecommendations = async (req, res, next) => {
             }
         );
         if (data.length > 0) {
-            response.GETSUCCESS(res, data);
+            response.GETSUCCESS(res, sortBy(data, 'serialNumber'));
         } else {
             throw Error('no record found');
         }

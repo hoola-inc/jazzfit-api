@@ -21,35 +21,35 @@ function physicalRecommendations(physicalElement) {
         if (physicalElement.answerText === 'Never' || physicalElement.answerText === 'Sometimes')
             createObj(physicalRecommendationsConst.QuestionOne.recommendationTitle, physicalRecommendationsConst.QuestionOne.recommendationArr, physicalElement);
         else
-            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionOne.recommendationForCorrectAnswer);
+            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionOne.recommendationForCorrectAnswerArr);
     }
 
     if (physicalElement.questionText === physicalRecommendationsConst.QuestionTwo.questionTitle) {
         if (physicalElement.answerText === 'Never' || physicalElement.answerText === 'Sometimes')
             createObj(physicalRecommendationsConst.QuestionTwo.recommendationTitle, physicalRecommendationsConst.QuestionTwo.recommendationArr, physicalElement);
         else
-            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionTwo.recommendationForCorrectAnswer);
+            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionTwo.recommendationForCorrectAnswerArr);
     }
 
     if (physicalElement.questionText === physicalRecommendationsConst.QuestionThree.questionTitle) {
         if (physicalElement.answerText === 'No')
             createObj(physicalRecommendationsConst.QuestionThree.recommendationTitle, physicalRecommendationsConst.QuestionThree.recommendationArr, physicalElement);
         else
-            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionThree.recommendationForCorrectAnswer);
+            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionThree.recommendationForCorrectAnswerArr);
     }
 
     if (physicalElement.questionText === physicalRecommendationsConst.QuestionFour.questionTitle) {
         if (physicalElement.answerText === 'Never' || physicalElement.answerText === 'Sometimes')
             createObj(physicalRecommendationsConst.QuestionFour.recommendationTitle, physicalRecommendationsConst.QuestionFour.recommendationArr, physicalElement);
         else
-            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionFour.recommendationForCorrectAnswer);
+            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionFour.recommendationForCorrectAnswerArr);
     }
 
     if (physicalElement.questionText === physicalRecommendationsConst.QuestionFive.questionTitle) {
         if (physicalElement.answerText === 'Yes')
             createObj(physicalRecommendationsConst.QuestionFive.recommendationTitle, physicalRecommendationsConst.QuestionFive.recommendationArr, physicalElement);
         else
-            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionFive.recommendationForCorrectAnswer);
+            correctAnsObj(physicalElement, physicalRecommendationsConst.QuestionFive.recommendationForCorrectAnswerArr);
     }
 
 }
@@ -174,7 +174,7 @@ function correctAnsObj(element, arr) {
     obj = {
         recommendationTitle: 'Great Job',
         empId: element.empId,
-        serial: element.serial,
+        serialNumber: element.serialNumber,
         question: element.questionText,
         answer: element.answerText,
         recommendation: arr,
@@ -189,7 +189,7 @@ function createObj(recommendationTitle, recommendationArr, element) {
     obj = {
         recommendationTitle: recommendationTitle,
         empId: element.empId,
-        serial: element.serial,
+        serialNumber: element.serialNumber,
         question: element.questionText,
         answer: element.answerText,
         recommendation: recommendationArr,
@@ -198,11 +198,11 @@ function createObj(recommendationTitle, recommendationArr, element) {
     }
     saveRecommendation(obj);
 }
-
+let i = 0;
 async function saveRecommendation(data) {
     try {
         const createDoc = new RecommendationsModel(data);
-        console.log('saving recommendations...');
+        console.log('saving recommendations...', i++);
         await createDoc.save();
     } catch (error) {
         throw Error(error);
