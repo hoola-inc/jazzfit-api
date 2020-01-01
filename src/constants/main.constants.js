@@ -284,7 +284,7 @@ module.exports.socialRecommendations = {
     },
 
     Questiontwo: {
-        questionTitle: "I spend enough time with my family",
+        questionTitle: "I don't spend enough time with my family",
         recommendationTitle: "One of the biggest sources of stress is inability to balance work and life. Some of the tips to improve your social wellbeing are:",
         recommendationArr: [
             {
