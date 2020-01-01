@@ -309,7 +309,7 @@ module.exports.socialRecommendations = {
 
     Questionthree: {
         questionTitle: "I am quick to show my appreciation for others",
-        recommendationTitle: "Null",
+        recommendationTitle: "Praise a job well done",
         recommendationArr: [
             {
                 title: "Praise a job well done.",
@@ -341,7 +341,7 @@ module.exports.socialRecommendations = {
 
     Questiontfour: {
         questionTitle: "I am comfortable sharing my achievements with others",
-        recommendationTitle: "Null",
+        recommendationTitle: "Focus on your successes",
         recommendationArr: [
             {
                 title: "Focus on your successes",
@@ -373,7 +373,7 @@ module.exports.socialRecommendations = {
 
     Questiontfive: {
         questionTitle: "I find conflicts difficult to resolve",
-        recommendationTitle: "Null",
+        recommendationTitle: "Listening carefully",
         recommendationArr: [
             {
                 title: "Listening carefully",
@@ -476,7 +476,7 @@ module.exports.mentalRecommendations = {
 
     Questiontfour: {
         questionTitle: "I take frequent breaks from my work throughout the day to think about other things",
-        recommendationTitle: "Null",
+        recommendationTitle: "Create some margin in your life",
         recommendationArr: [
             {
                 title: "Create some margin in your life",
