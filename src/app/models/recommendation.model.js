@@ -30,7 +30,8 @@ const Recommendation = mongoose.Schema({
         default: 0,
         min: 0,
         max: 2
-    }
+    },
+    color: String
 
 }, {
     timestamps: true

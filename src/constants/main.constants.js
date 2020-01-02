@@ -38,6 +38,7 @@ module.exports.socialWellness = {
 // Recommendations against each score
 
 module.exports.physicalRecommendations = {
+    color: "#bfd632",
     QuestionOne: {
         questionTitle: "I get 7-8 hours of sleep everyday",
         recommendationTitle: "Sleep is essential for your physical wellbeing. On-going sleep deficiency can add to your stress and anxieties. Here are a few tips that can help you get good sleep.",
@@ -160,7 +161,7 @@ module.exports.physicalRecommendations = {
 
 
 module.exports.emotionalRecommendations = {
-
+    color: "#ef4323",
     QuestionOne: {
         questionTitle: "I find myself worrying about the future",
         recommendationTitle: "Constantly worrying about the future is the major source of anxiety in people. One of the reasons for this is one’s inability to think in the present.",
@@ -252,6 +253,7 @@ module.exports.emotionalRecommendations = {
 }
 
 module.exports.socialRecommendations = {
+    color: "#18aeef",
     QuestionOne: {
         questionTitle: "I am aware of the needs and concerns of my coworkers",
         recommendationTitle: "Your relationship with people affects your wellbeing. It’s essential to understand what your coworkers are going through and be empathetic.",
@@ -404,7 +406,7 @@ module.exports.socialRecommendations = {
 }
 
 module.exports.mentalRecommendations = {
-
+    color: "#834291",
     Questionone: {
         questionTitle: "I get distracted easily",
         recommendationTitle: "Lack of focus leads to stress. It’s essential to take a pause and understand what needs to be done.",
