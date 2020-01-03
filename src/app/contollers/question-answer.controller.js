@@ -17,7 +17,7 @@ exports.createQuestionAnswer = (req, res, next) => {
         req.body.map(async (element, index) => {
             try {
                 const createNew = new QuestionAnswerSchema(element);
-
+                console.log('Anser Weightage ::: ', element.answerWeightage);
                 switch (element.wellnessType) {
                     case 'mental':
                         mentalScore = mentalScore + element.answerWeightage;
