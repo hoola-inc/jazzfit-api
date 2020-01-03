@@ -115,6 +115,12 @@ async function totalScoreWeightage(totalScore, physicalScore, mentalScore, emoti
 
     totalScore = totalScore / 4;
 
+    console.log('physical score: ', physicalScore);
+    console.log('mental score: ', mentalScore);
+    console.log('emotional score: ', emotionalScore);
+    console.log('social score: ', socialScore);
+    console.log('total score: ', totalScore);
+
     if (totalScore > 0 && totalScore <= 25)
         totalWellnessText = wellnessTextConst.totalWellness.Fourth;
     if (totalScore > 25 && totalScore <= 50)
