@@ -57,7 +57,7 @@ function physicalRecommendations(physicalElement) {
 function mentalRecommendations(mentalElement) {
 
     if (mentalElement.questionText === mentalRecommendationsConst.Questionone.questionTitle) {
-        if (mentalElement.answerText === 'Often' || mentalElement.answerText === 'Always')
+        if (mentalElement.answerText === 'Never' || mentalElement.answerText === 'Sometimes')
             createObj(mentalRecommendationsConst.Questionone.recommendationTitle, mentalRecommendationsConst.Questionone.recommendationArr, mentalElement, mentalRecommendationsConst.color);
         else
             correctAnswerObj(mentalElement, mentalRecommendationsConst.Questionone.recommendationForCorrectAnswerArr, mentalRecommendationsConst.color);
