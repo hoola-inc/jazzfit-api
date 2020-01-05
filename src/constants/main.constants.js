@@ -359,7 +359,7 @@ module.exports.socialRecommendations = {
             },
             {
                 title: "A Take control Social Quotient workshop",
-                detail: "•	A Take control Social Quotient workshop can enable you to differentiate between the two mindsets and give you the tools to make the transition from fixed to growth."
+                detail: "A Take control Social Quotient workshop can enable you to differentiate between the two mindsets and give you the tools to make the transition from fixed to growth."
             },
             {
                 title: "Increase your knowledge",
@@ -440,7 +440,7 @@ module.exports.mentalRecommendations = {
         recommendationArr: [
             {
                 title: "Make learning a habit",
-                detail: "- Enroll yourself in e-learning courses, attend workshops and training sessions on topics that excite you, build connections to learn about different aspects of life and business to develop a futuristic outlook on life."
+                detail: "Enroll yourself in e-learning courses, attend workshops and training sessions on topics that excite you, build connections to learn about different aspects of life and business to develop a futuristic outlook on life."
             },
             {
                 title: "Stop accepting the standard",
