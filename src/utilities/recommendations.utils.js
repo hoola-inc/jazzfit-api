@@ -172,7 +172,7 @@ function emotionalRecommendations(emotionalElement) {
 function correctAnswerObj(element, arr, color) {
     let obj = {};
     obj = {
-        recommendationTitle: 'Great Job',
+        recommendationTitle: '',
         empId: element.empId,
         serialNumber: element.serialNumber,
         question: element.questionText,
