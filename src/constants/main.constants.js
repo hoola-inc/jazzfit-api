@@ -436,7 +436,7 @@ module.exports.mentalRecommendations = {
 
     Questiontwo: {
         questionTitle: "I care more about the long term goal than short term wins",
-        recommendationTitle: ":Lack of clarity about the long-term goals and big picture can hinder self-improvement and create stress about the future. Continuous improvement is the key here. Here are a few tips:",
+        recommendationTitle: "Lack of clarity about the long-term goals and big picture can hinder self-improvement and create stress about the future. Continuous improvement is the key here. Here are a few tips:",
         recommendationArr: [
             {
                 title: "Make learning a habit",
