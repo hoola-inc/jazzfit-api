@@ -61,7 +61,7 @@ module.exports.physicalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "A well slept mind is a healthy mind ",
+            title: "Good Job",
             detail: "A well slept mind is a healthy mind - and you seem to be taking good care of it! Not only will this habit help you fight away your stress and anxiety, but is overall great for your physical well being too!"
         }]
     },
@@ -87,7 +87,7 @@ module.exports.physicalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "A healthy breakfast is the key to start your day",
+            title: "Great Job",
             detail: "A healthy breakfast is the key to start your day- and you seem to know that very well! By sticking to a healthy breakfast habit, you are reducing your chances of  obesity, high blood pressure, heart disease, diabetes and ensuring long term health benefits!"
         }]
     },
@@ -105,7 +105,7 @@ module.exports.physicalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "Staying fit is on your agenda",
+            title: "Well Done",
             detail: "Staying fit is on your agenda, and that is great! By opting for a consistent amount of exercise, you are not only balancing your weight but rather you are improving the quality of your life and enhancing your mind and body health!"
         }]
     },
@@ -131,7 +131,7 @@ module.exports.physicalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You are glowing!",
+            title: "Excellent Work",
             detail: "You are glowing! By consuming a sufficient amount of water everyday, you are helping your digestive mechanism work its best along with keeping your body healthy and hydrated!"
         }]
     },
@@ -153,7 +153,7 @@ module.exports.physicalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "Take a bow and be proud of yourself!",
+            title: "Awesome",
             detail: "Take a bow and be proud of yourself! By saying no to cigarettes, you are not only mitigating your chances for heart attacks, strokes and chronic obstructive pulmonary diseases but also adding ----- years to your life! "
         }]
     }
@@ -176,7 +176,7 @@ module.exports.emotionalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You are an in-the-moment person",
+            title: "Great Job",
             detail: "You are an in-the-moment person, and thinking about unalterable actions of the future does not faze you. Keeping this up will help you remain non anxious in the long run!"
         }]
     },
@@ -195,7 +195,7 @@ module.exports.emotionalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You love the work that you do",
+            title: "Good Job",
             detail: "You love the work that you do and it doesn’t get any better than that! You are aware of the contribution that you make everyday to your firm, your goals and yourself, and fully realise the difference that you are helping to create in the world. More power to you!"
         }]
     },
@@ -214,7 +214,7 @@ module.exports.emotionalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "Your actions and thoughts are aligned",
+            title: "Well Done",
             detail: "Your actions and thoughts are aligned, and you are on a roll! You possess a high level of emotional intelligence and are able to manifest your ideas and passion in a constructive manner to get the results that you desire.This makes you an individual with a strong and stress free mind.Good going!"
         }]
     },
@@ -224,7 +224,7 @@ module.exports.emotionalRecommendations = {
         recommendationTitle: "Taking a risk to achieve a goal requires courage to face the fear of uncertainty. No matter the outcome, either way, we grow through the process and become more resilient and confident. Risk-taking and being risk-averse are products of the mindset we hold. A fixed mindset, which forces us to put limits on the potential of our abilities discourages us from taking risks, while a growth mindset pushes us to venture into the new and unknown, thereby take risks in order to learn and expand our abilities.",
         recommendationArr: [
             {
-                title: "Take Control Mind Over Matter workshop",
+                title: "Excellent Work",
                 detail: "A Take Control Mind Over Matter workshop can enable you to differentiate between the two mindsets and give you the tools to make the transition from fixed to growth."
             }
 
@@ -246,7 +246,7 @@ module.exports.emotionalRecommendations = {
 
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "Patience and good sense",
+            title: "Awesome",
             detail: "Patience and good sense are the virtues that you stand by, and this helps you to have a strong impulse control. You not only have a strong ability to control your actions, but you also possess a high power of emotion regulation. That is a sign of a wise mind!"
         }]
     }
@@ -280,7 +280,7 @@ module.exports.socialRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "GreYou are an emotionally intelligentat",
+            title: "Great Job",
             detail: "You are an emotionally intelligent individual which gives you a high understanding of your surroundings and the people around you. This is a vital skill for the modern workplace for the environment and will take you a long way ahead"
         }]
     },
@@ -304,7 +304,7 @@ module.exports.socialRecommendations = {
 
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You strike a good work life balance",
+            title: "Good Job",
             detail: "You strike a good work life balance and know the importance of keeping up with human connections alongside your professional commitments. This helps to regulate your stress and puts you high on the ladder of social well being."
         }]
     },
@@ -336,7 +336,7 @@ module.exports.socialRecommendations = {
 
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You possess a high level",
+            title: "Well Done",
             detail: "You possess a high level of consideration for people in your surroundings and do not hold back any praise for other people. You are a highly secure individual and make an effort to uplift other people by reinforcing their positive behaviour. You are a keeper!"
         }]
     },
@@ -368,7 +368,7 @@ module.exports.socialRecommendations = {
 
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You maintain a healthy level",
+            title: "Excellent Work",
             detail: "You maintain a healthy level of self esteem which is why you are able to share your achievements with the world. You have confidence in your abilities and are not afraid to speak your mind. Keep it up!"
         }]
     },
@@ -399,7 +399,7 @@ module.exports.socialRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "Your ability to resolve conflicts",
+            title: "Awesome",
             detail: "Your ability to resolve conflicts is a testament to your great communication skills. You are a natural problem solver and have the capability to lead you and your teams out of tight spots and tricky situations. Way to go"
         }]
     }
@@ -429,7 +429,7 @@ module.exports.mentalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "Your ability to focus is phenomenal!",
+            title: "Great Job",
             detail: "Your ability to focus is phenomenal!  You can channel your energies in one direction and give it your all to attain the desired results. This helps to reduce work stress and to improve the work output quality"
         }]
     },
@@ -452,7 +452,7 @@ module.exports.mentalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You thrive on the ideology",
+            title: "Good Job",
             detail: "You thrive on the ideology of improving yourself everyday and are able to see the bigger picture behind small actions. This clarity helps you to stress less about your goals and pushes you to strive towards achieving the greater vision"
         }]
     },
@@ -471,7 +471,7 @@ module.exports.mentalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You are full of new ideas and you are not not afraid to show it",
+            title: "Excellent Work",
             detail: "You are full of new ideas and you are not not afraid to show it! By adding new flavour to conventional methods at work, you are someone who can integrate the new with old to improve the work quality. Keep the creativity flowing!"
         }]
     },
@@ -490,7 +490,7 @@ module.exports.mentalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You are a hard worker who knows when to take a break.",
+            title: "Awesome",
             detail: "You are a hard worker who knows when to take a break. You realise the importance of recharging your mind and making time for activities and interpersonal connections that help you relax. Keep up this practice for better work quality and a healthier you!"
         }]
     },
@@ -517,7 +517,7 @@ module.exports.mentalRecommendations = {
             }
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You are a planner!",
+            title: "Well Done",
             detail: "You are a planner! Your thoughts are well organised and this translates into your actions Your meticulous preparation for any sort of situation makes you the person to be relied upon and hence - an asset to your company!"
         }]
     }
