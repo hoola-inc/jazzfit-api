@@ -45,19 +45,19 @@ module.exports.physicalRecommendations = {
         recommendationArr: [
             {
                 title: "Avoid Caffeine",
-                detail: "Limit yourself to just one cup of caffeinated coffee at breakfast, or drink decaf. Too much caffeine in the morning can stay with you until bedtime. (If you're used to drinking several cups of coffee a day, wean yourself off it gradually over a few weeks.)"
+                detail: "Avoid Caffeine - Limit yourself to just one cup of caffeinated coffee at breakfast, or drink decaf. Too much caffeine in the morning can stay with you until bedtime. (If you're used to drinking several cups of coffee a day, wean yourself off it gradually over a few weeks.)"
             },
             {
                 title: "Reduce irregular daytime naps",
-                detail: "Sleeping in the daytime can confuse your internal clock, struggling to sleep at night."
+                detail: "Reduce irregular daytime naps - Sleeping in the daytime can confuse your internal clock, struggling to sleep at night."
             },
             {
                 title: "Lighten up on evening meals",
-                detail: "Eating a pizza at 10 p.m. may be a recipe for insomnia. Finish dinner several hours before bedtime and avoid foods that cause indigestion."
+                detail: "Lighten up on evening meals - Eating a pizza at 10 p.m. may be a recipe for insomnia. Finish dinner several hours before bedtime and avoid foods that cause indigestion."
             },
             {
                 title: "Use light to your advantage",
-                detail: "Natural light keeps your internal clock on a healthy sleep-wake cycle. So let in the light first thing in the morning and get out of the office for a sun break during the day."
+                detail: "Use light to your advantage - Natural light keeps your internal clock on a healthy sleep-wake cycle. So let in the light first thing in the morning and get out of the office for a sun break during the day."
             }
         ],
         recommendationForCorrectAnswerArr: [{
@@ -71,15 +71,15 @@ module.exports.physicalRecommendations = {
         recommendationArr: [
             {
                 title: "Prep the night before",
-                detail: "Not only does prepping lunches the night before make mornings easier, but making breakfast the night before helps tremendously."
+                detail: "Prep the night before - Not only does prepping lunches the night before make mornings easier, but making breakfast the night before helps tremendously."
             },
             {
                 title: "Eating vegetables/fruits",
-                detail: "Don’t forget to include at least one serving of fruits and vegetables in your breakfast–otherwise, you will find it hard to get your optimal daily intake."
+                detail: "Eating vegetables/fruits - Don’t forget to include at least one serving of fruits and vegetables in your breakfast–otherwise, you will find it hard to get your optimal daily intake."
             },
             {
                 title: "Make healthy snacking easier to achieve than unhealthy snacking",
-                detail: "Place a container of almonds and a selection of protein bars by your computer, near your line of vision."
+                detail: "Make healthy snacking easier to achieve than unhealthy snacking - Place a container of almonds and a selection of protein bars by your computer, near your line of vision."
             },
             {
                 title: "Nutrition Awareness session",
@@ -97,11 +97,11 @@ module.exports.physicalRecommendations = {
         recommendationArr: [
             {
                 title: "Exercise boosts energy",
-                detail: "Find a convenient time and place to do activities. Try to make it a habit but be flexible. If you miss an exercise opportunity, work activity into your day another way. Regular physical activity can improve your muscle strength and boost your endurance. Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently."
+                detail: "Exercise boosts energy - Find a convenient time and place to do activities. Try to make it a habit but be flexible. If you miss an exercise opportunity, work activity into your day another way. Regular physical activity can improve your muscle strength and boost your endurance. Exercise delivers oxygen and nutrients to your tissues and helps your cardiovascular system work more efficiently."
             },
             {
                 title: "Exercise combats health conditions and diseases",
-                detail: "Choose activities that are fun, not exhausting. Add variety. Develop a repertoire of several activities that you can enjoy. That way, exercise will never seem boring or routine. Exercise boosts high-density lipoprotein (HDL) cholesterol, the 'good' cholesterol, and it decreases unhealthy triglycerides. This keeps your blood flowing smoothly, which decreases your risk of cardiovascular diseases."
+                detail: "Exercise combats health conditions and diseases - Choose activities that are fun, not exhausting. Add variety. Develop a repertoire of several activities that you can enjoy. That way, exercise will never seem boring or routine. Exercise boosts high-density lipoprotein (HDL) cholesterol, the 'good' cholesterol, and it decreases unhealthy triglycerides. This keeps your blood flowing smoothly, which decreases your risk of cardiovascular diseases."
             }
         ],
         recommendationForCorrectAnswerArr: [{
@@ -115,19 +115,19 @@ module.exports.physicalRecommendations = {
         recommendationArr: [
             {
                 title: "Sip before every meal",
-                detail: "If you are making dinner at home, sip while you cook and prep. If you're out at a restaurant, ask for water when the server comes around to take drink orders. If you're waiting for your lunch to heat up or your toast to pop, drink water while doing it. Even if you're putting together a snack, drink that water. It's just a simple rule that will help you drink more water."
+                detail: "Sip before every meal - If you are making dinner at home, sip while you cook and prep. If you're out at a restaurant, ask for water when the server comes around to take drink orders. If you're waiting for your lunch to heat up or your toast to pop, drink water while doing it. Even if you're putting together a snack, drink that water. It's just a simple rule that will help you drink more water."
             },
             {
                 title: "Add flavor",
-                detail: "You can add a little bit of excitement and flavor by steeping fresh fruit (grapefruit, strawberries, lemon), veggie slices (cucumber, ginger, celery), and herbs (basil, mint, lavender) in your carafe. The longer you let it steep, the tastier each cup will be. And you can play around with different combos, like cucumber mint or basil lemon."
+                detail: "Add flavor - You can add a little bit of excitement and flavor by steeping fresh fruit (grapefruit, strawberries, lemon), veggie slices (cucumber, ginger, celery), and herbs (basil, mint, lavender) in your carafe. The longer you let it steep, the tastier each cup will be. And you can play around with different combos, like cucumber mint or basil lemon."
             },
             {
                 title: "Dilute sugary drinks with water and ice",
-                detail: "If you're drinking something extra sweet like juice, lemonade, or iced tea, water down your beverage by adding ice or even diluting a cup with some water. You’ll still get the sweetness you’re craving and have some extra water at the same time."
+                detail: "Dilute sugary drinks with water and ice - If you're drinking something extra sweet like juice, lemonade, or iced tea, water down your beverage by adding ice or even diluting a cup with some water. You’ll still get the sweetness you’re craving and have some extra water at the same time."
             },
             {
                 title: "Keep a gallon jug nearby",
-                detail: "It’s easy to remember to fill up on water when the source is nearby. Keep a gallon jug or large carafe at your desk, by the bed at home, and on the kitchen counter as a constant reminder to drink up. The more you have to look at that water jug, the more you'll remember to fill it and drink it."
+                detail: "Keep a gallon jug nearby - It’s easy to remember to fill up on water when the source is nearby. Keep a gallon jug or large carafe at your desk, by the bed at home, and on the kitchen counter as a constant reminder to drink up. The more you have to look at that water jug, the more you'll remember to fill it and drink it."
             }
         ],
         recommendationForCorrectAnswerArr: [{
@@ -145,11 +145,11 @@ module.exports.physicalRecommendations = {
             },
             {
                 title: "Avoid triggers",
-                detail: "Urges for tobacco are likely to be strongest in the situations where you smoked or chewed tobacco most often, such as at parties, or while feeling stressed or sipping coffee. Identify your trigger situations and have a plan in place to avoid them entirely or get through them without using tobacco."
+                detail: "Avoid triggers - Urges for tobacco are likely to be strongest in the situations where you smoked or chewed tobacco most often, such as at parties, or while feeling stressed or sipping coffee. Identify your trigger situations and have a plan in place to avoid them entirely or get through them without using tobacco."
             },
             {
                 title: "Delay",
-                detail: "If you feel like you're going to give in to your tobacco craving, tell yourself that you must first wait 10 more minutes — and then do something to distract yourself for that period of time. Try going to a public, smoke-free zone. These simple tricks may be enough to derail your tobacco craving."
+                detail: "Delay - If you feel like you're going to give in to your tobacco craving, tell yourself that you must first wait 10 more minutes — and then do something to distract yourself for that period of time. Try going to a public, smoke-free zone. These simple tricks may be enough to derail your tobacco craving."
             }
         ],
         recommendationForCorrectAnswerArr: [{
@@ -172,7 +172,7 @@ module.exports.emotionalRecommendations = {
             },
             {
                 title: "Enrolling in a Take Control Stress Management Workshop",
-                detail: "will allow you to identify your stressors and ways of dealing with them"
+                detail: "Enrolling in a Take Control Stress Management Workshop will allow you to identify your stressors and ways of dealing with them"
             }
         ],
         recommendationForCorrectAnswerArr: [{
@@ -191,7 +191,7 @@ module.exports.emotionalRecommendations = {
             },
             {
                 title: "Opting for a Take Control Mind Over Matter workshop",
-                detail: "can help give you structure in this respect."
+                detail: "Opting for a Take Control Mind Over Matter workshop can help give you structure in this respect."
             }
         ],
         recommendationForCorrectAnswerArr: [{
@@ -224,13 +224,13 @@ module.exports.emotionalRecommendations = {
         recommendationTitle: "Taking a risk to achieve a goal requires courage to face the fear of uncertainty. No matter the outcome, either way, we grow through the process and become more resilient and confident. Risk-taking and being risk-averse are products of the mindset we hold. A fixed mindset, which forces us to put limits on the potential of our abilities discourages us from taking risks, while a growth mindset pushes us to venture into the new and unknown, thereby take risks in order to learn and expand our abilities.",
         recommendationArr: [
             {
-                title: "Excellent Work",
+                title: "Take Control Mind Over Matter",
                 detail: "A Take Control Mind Over Matter workshop can enable you to differentiate between the two mindsets and give you the tools to make the transition from fixed to growth."
             }
 
         ],
         recommendationForCorrectAnswerArr: [{
-            title: "You are determined to try new things",
+            title: "Excellent Work",
             detail: "You are determined to try new things and are not afraid to take risks. You do not like to restrict yourself and your imagination, and love exploring the new opportunities that lie ahead. You possess the confidence to venture into the unknown, and this ability will help pave the way for many enriching experiences."
         }]
     },
@@ -260,22 +260,22 @@ module.exports.socialRecommendations = {
         recommendationArr: [
             {
                 title: "Become an active listener",
-                detail: "one of the most important steps of developing empathy is actively listening to others, so that you can understand their positions. When you listen, be sure to listen to the entire message that the other person is trying to communicate. Listen with your ears – what is being said, and what tone is being used? Listen with your eyes – what the person is doing with his or her body while speaking? Listen with your instincts – do you sense that the person is not communicating something important? Listen with your heart – what do you think the other person feels?"
+                detail: "Become an active listener - One of the most important steps of developing empathy is actively listening to others, so that you can understand their positions. When you listen, be sure to listen to the entire message that the other person is trying to communicate. Listen with your ears – what is being said, and what tone is being used? Listen with your eyes – what the person is doing with his or her body while speaking? Listen with your instincts – do you sense that the person is not communicating something important? Listen with your heart – what do you think the other person feels?"
             },
             {
                 title: "Put aside your judgement",
-                detail: "try to see things from the other person's point of view. When you do this, you'll realize that other people most likely aren't being evil, unkind, stubborn, or unreasonable – they're probably just reacting to the situation with the knowledge they have. Avoid judgement as much as you can. Always try to see things from others’ viewpoint before reacting."
+                detail: "Put aside your judgement - Try to see things from the other person's point of view. When you do this, you'll realize that other people most likely aren't being evil, unkind, stubborn, or unreasonable – they're probably just reacting to the situation with the knowledge they have. Avoid judgement as much as you can. Always try to see things from others’ viewpoint before reacting."
             },
             {
                 title: "Try switching tasks with peers",
-                detail: "Once you understand their job role/work only then you will be able to show empathy. If the situation allows, try experimenting by swapping jobs for a bit."
+                detail: "Try switching tasks with peers - Once you understand their job role/work only then you will be able to show empathy. If the situation allows, try experimenting by swapping jobs for a bit."
             },
             {
                 title: "Learn various tools of knowing self and others",
-                detail: "•	Learn various tools of knowing self and others - by attending workshops on personal mastery, relationship management"
+                detail: "Learn various tools of knowing self and others - by attending workshops on personal mastery, relationship management"
             },
             {
-                title: "Social Quotient workshop ",
+                title: "Social Quotient workshop",
                 detail: "Attend a Take Control Social Quotient workshop"
             }
         ],
@@ -291,14 +291,14 @@ module.exports.socialRecommendations = {
         recommendationArr: [
             {
                 title: "Learn to say no",
-                detail: "earn to fight the guilt of not being available to everyone. It’s important to learn assertiveness by refusing tasks that can take extra time and add to your stress levels. Adherence to deadlines is important but taking more work than possible can lead to burn-out."
+                detail: "Learn to say no - Learn to fight the guilt of not being available to everyone. It’s important to learn assertiveness by refusing tasks that can take extra time and add to your stress levels. Adherence to deadlines is important but taking more work than possible can lead to burn-out."
             },
             {
                 title: "Protect your family/private time",
-                detail: "set fair and realistic limits on what you will and will not do both at work and at home. Clearly communicate these boundaries to your supervisor, coworkers, partner and family. For instance, you might commit to not working late on certain days unless there is a crisis. Additionally, set aside a time at home during which you will not check or respond to work-related emails or voicemails."
+                detail: "Protect your family/private time - Set fair and realistic limits on what you will and will not do both at work and at home. Clearly communicate these boundaries to your supervisor, coworkers, partner and family. For instance, you might commit to not working late on certain days unless there is a crisis. Additionally, set aside a time at home during which you will not check or respond to work-related emails or voicemails."
             },
             {
-                title: "Stress management workshop ",
+                title: "Stress management workshop",
                 detail: "Attend a Take Control Stress management workshop"
             }
 
@@ -315,19 +315,19 @@ module.exports.socialRecommendations = {
         recommendationArr: [
             {
                 title: "Praise a job well done.",
-                detail: "Identify the specific actions that you found admirable. This praise feels sincere since you took the time to spell out details—not just, 'You did a good job.' You also emphasize the actions that you'd like to see the employee do more often and everybody benefits when people experience clear direction"
+                detail: "Praise a job well done - Identify the specific actions that you found admirable. This praise feels sincere since you took the time to spell out details—not just, 'You did a good job.' You also emphasize the actions that you'd like to see the employee do more often and everybody benefits when people experience clear direction"
             },
             {
                 title: "Say thank you",
-                detail: "Show your appreciation for others hard work and contributions. Don't forget to say please often as well. Social niceties do belong at work. A more gracious, polite, civilized workplace is appreciated by all."
+                detail: "Say thank you- Show your appreciation for others hard work and contributions. Don't forget to say please often as well. Social niceties do belong at work. A more gracious, polite, civilized workplace is appreciated by all."
             },
             {
                 title: "Learn your co-workers' interests",
-                detail: "Questions and acknowledgments about their family, their hobbies, their weekend or a special event they attended are always welcome. Your genuine interest—as opposed to being nosey—causes people to feel valued and cared about."
+                detail: "Learn your co-workers' interests - Questions and acknowledgments about their family, their hobbies, their weekend or a special event they attended are always welcome. Your genuine interest—as opposed to being nosey—causes people to feel valued and cared about."
             },
             {
                 title: "Present a personalized gift",
-                detail: "Know your coworker’s interests well enough to present a small gift occasionally. An appreciated gift and the gesture of providing it will light up your coworker’s day. A greeting card serves the same purpose. You can give a card for no reason at all, to celebrate a special day such as a birthday, or to offer sympathy when a coworker is ill or experiences a family death."
+                detail: "Present a personalized gift - Know your coworker’s interests well enough to present a small gift occasionally. An appreciated gift and the gesture of providing it will light up your coworker’s day. A greeting card serves the same purpose. You can give a card for no reason at all, to celebrate a special day such as a birthday, or to offer sympathy when a coworker is ill or experiences a family death."
             },
             {
                 title: "Social Quotient",
@@ -347,15 +347,15 @@ module.exports.socialRecommendations = {
         recommendationArr: [
             {
                 title: "Focus on your successes",
-                detail: "It’s difficult to boost confidence if you’re bemoaning what you don’t do well. Remind yourself of all the successful projects you’ve done to boost confidence in your abilities at work. Did you meet a tight deadline? Did you manage to turn a difficult project around? Did your boss praise one of your ideas? Recalling successful times at work is a better way to boost confidence instead of constantly focusing on the negatives"
+                detail: "Focus on your successes - It’s difficult to boost confidence if you’re bemoaning what you don’t do well. Remind yourself of all the successful projects you’ve done to boost confidence in your abilities at work. Did you meet a tight deadline? Did you manage to turn a difficult project around? Did your boss praise one of your ideas? Recalling successful times at work is a better way to boost confidence instead of constantly focusing on the negatives"
             },
             {
                 title: "Trumpet your own success",
-                detail: "It's OK to let people know when you get a win, at least in small doses. That's not normally true with friends or spouses in daily life, because it sounds like bragging. Yet, you can build your own confidence by pointing out, in a matter-of-fact way, that you were the one who accomplished something for the company. It makes you more confident because you get into the habit of self-rewards and self-acknowledgement."
+                detail: "Trumpet your own success - It's OK to let people know when you get a win, at least in small doses. That's not normally true with friends or spouses in daily life, because it sounds like bragging. Yet, you can build your own confidence by pointing out, in a matter-of-fact way, that you were the one who accomplished something for the company. It makes you more confident because you get into the habit of self-rewards and self-acknowledgement."
             },
             {
                 title: "Speak your mind",
-                detail: "not recommending you avoid having a filter for what you say at meetings and just chime in with whatever comes to your mind. Yet, a lack of confidence is often a bottleneck that keeps you from saying what you really think. Uncork that confidence blocker. By stating your view in a meeting, you are building confidence because at least you can see the reactions to your viewpoint and adjust as needed"
+                detail: "Speak your mind - not recommending you avoid having a filter for what you say at meetings and just chime in with whatever comes to your mind. Yet, a lack of confidence is often a bottleneck that keeps you from saying what you really think. Uncork that confidence blocker. By stating your view in a meeting, you are building confidence because at least you can see the reactions to your viewpoint and adjust as needed"
             },
             {
                 title: "A Take control Social Quotient workshop",
@@ -363,7 +363,7 @@ module.exports.socialRecommendations = {
             },
             {
                 title: "Increase your knowledge",
-                detail: "It might seem obvious, but you can also build confidence by learning more. Read more books, watch more TED talks, attend more seminars. It's easy to go overboard, and spouting your knowledge too often can be a confidence killer when people who have greater knowledge on the subject start debating with you, but knowing what to do about a complex issue or problem can help you gain confidence. Confidence grows when you act on what you know."
+                detail: "Increase your knowledge - It might seem obvious, but you can also build confidence by learning more. Read more books, watch more TED talks, attend more seminars. It's easy to go overboard, and spouting your knowledge too often can be a confidence killer when people who have greater knowledge on the subject start debating with you, but knowing what to do about a complex issue or problem can help you gain confidence. Confidence grows when you act on what you know."
             }
 
         ],
@@ -413,15 +413,15 @@ module.exports.mentalRecommendations = {
         recommendationArr: [
             {
                 title: "Meditate",
-                detail: "Take 20 minutes from your day to meditate. Meditation allows you to stay attentive for longer periods of time, just like exercise trains your muscles. Your brain will become strong enough to ignore distractions- start by reading on mindfulness and doing some breathing exercises, everyday (links attached)- Attend workshops on mindfulness to understand the process."
+                detail: "Meditate take 20 minutes from your day to meditate. Meditation allows you to stay attentive for longer periods of time, just like exercise trains your muscles. Your brain will become strong enough to ignore distractions- start by reading on mindfulness and doing some breathing exercises, everyday (links attached)- Attend workshops on mindfulness to understand the process."
             },
             {
                 title: "Break work into chunks",
-                detail: "Try to focus on a segment of work and treat yourself with a break, good music or a walk around the floor after short durations of concentration. Don’t spend long hours in one position and make sure you break the monotony after every 45 minutes"
+                detail: "Break work into chunks try to focus on a segment of work and treat yourself with a break, good music or a walk around the floor after short durations of concentration. Don’t spend long hours in one position and make sure you break the monotony after every 45 minutes"
             },
             {
                 title: "Eliminate visual/physical distractions",
-                detail: "As obvious as it sounds, get rid of everything that distracts you. Move to a quieter corner of the room, remove unnecessary visuals from your workstation, try to put your mobile device away when in the middle of a task."
+                detail: "Eliminate visual/physical distractions as obvious as it sounds, get rid of everything that distracts you. Move to a quieter corner of the room, remove unnecessary visuals from your workstation, try to put your mobile device away when in the middle of a task."
             },
             {
                 title: "Stress Management workshop",
@@ -440,11 +440,11 @@ module.exports.mentalRecommendations = {
         recommendationArr: [
             {
                 title: "Make learning a habit",
-                detail: "Enroll yourself in e-learning courses, attend workshops and training sessions on topics that excite you, build connections to learn about different aspects of life and business to develop a futuristic outlook on life."
+                detail: "Make learning a habit - Enroll yourself in e-learning courses, attend workshops and training sessions on topics that excite you, build connections to learn about different aspects of life and business to develop a futuristic outlook on life."
             },
             {
                 title: "Stop accepting the standard",
-                detail: "If I had asked people what they wanted, they would have said faster horses”- Henry Ford. It’s easier to accept the status quo, but challenge what’s around you for brilliant results. Try to do a cost-benefit analysis of every decision you take- make it a habit to see the bigger picture instead of focusing on the immediate."
+                detail: "Stop accepting the standard - If I had asked people what they wanted, they would have said faster horses”- Henry Ford. It’s easier to accept the status quo, but challenge what’s around you for brilliant results. Try to do a cost-benefit analysis of every decision you take- make it a habit to see the bigger picture instead of focusing on the immediate."
             },
             {
                 title: "Mind Over Matter workshop",
@@ -463,7 +463,7 @@ module.exports.mentalRecommendations = {
         recommendationArr: [
             {
                 title: "Learn tangible tools of creative thinking",
-                detail: "such as design thinking (Read the book Change by Design by Tim Brown). This will give you a perspective into how certain steps of our thinking process feed into each other to solve different issues. Attend workshops on the topic and keep learning about creativity"
+                detail: "Learn tangible tools of creative thinking - Such as design thinking (Read the book Change by Design by Tim Brown). This will give you a perspective into how certain steps of our thinking process feed into each other to solve different issues. Attend workshops on the topic and keep learning about creativity"
             },
             {
                 title: "Mind Over Matter workshop",
@@ -482,10 +482,10 @@ module.exports.mentalRecommendations = {
         recommendationArr: [
             {
                 title: "Create some margin in your life",
-                detail: "Margin simply means breathing space. Your schedule should be simple enough that you control it, instead of it controlling you. Take time out for some activities that you enjoy, connect with people on the floor, talk to family. Make sure you don’t swamp yourself with work all the time. This is very significant for renewing your mental energies"
+                detail: "Create some margin in your life - Margin simply means breathing space. Your schedule should be simple enough that you control it, instead of it controlling you. Take time out for some activities that you enjoy, connect with people on the floor, talk to family. Make sure you don’t swamp yourself with work all the time. This is very significant for renewing your mental energies"
             },
             {
-                title: "Stress Management workshop ",
+                title: "Stress Management workshop",
                 detail: "Attend a Take Control Stress Management workshop"
             }
         ],
@@ -501,15 +501,15 @@ module.exports.mentalRecommendations = {
         recommendationArr: [
             {
                 title: "Create a to-do list",
-                detail: "Make it a habit to structure your thoughts in a diary, computer or mobile device. This process of translating your thoughts into an ordered to-do list declutters your brain and enables you to focus on all tasks one by one. Try to accomplish one significant task before lunch"
+                detail: "Create a to-do list - make it a habit to structure your thoughts in a diary, computer or mobile device. This process of translating your thoughts into an ordered to-do list declutters your brain and enables you to focus on all tasks one by one. Try to accomplish one significant task before lunch"
             },
             {
                 title: "Practice Mindfulness",
-                detail: "It’s very important for thoughts to make sense in the head before they are translated into actions- Take workshops on mindfulness to understand the power of your brain by living in the present. This will allow you to prioritize activities in order of significance"
+                detail: "Practice Mindfulness - It’s very important for thoughts to make sense in the head before they are translated into actions- Take workshops on mindfulness to understand the power of your brain by living in the present. This will allow you to prioritize activities in order of significance"
             },
             {
                 title: "Block your calendar beforehand",
-                detail: "Even if you think your plans may change, it’s always wise to block your calendar for important/planned events. Once it becomes a habit, your brain will start planning all activities in advance."
+                detail: "Block your calendar beforehand - Even if you think your plans may change, it’s always wise to block your calendar for important/planned events. Once it becomes a habit, your brain will start planning all activities in advance."
             },
             {
                 title: "Matter workshop",
