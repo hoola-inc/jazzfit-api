@@ -22,12 +22,10 @@ const EmployeeSchema = mongoose.Schema({
         required: true
     },
     height: {
-        type: String,
-        required: true
+        type: String
     },
     weight: {
-        type: String,
-        required: true
+        type: String
     },
     email: {
         type: String,
@@ -61,20 +59,20 @@ const EmployeeSchema = mongoose.Schema({
 
 
 
-EmployeeSchema.pre("save", function (next) {
-    const self = this;
+// EmployeeSchema.pre("save", function (next) {
+//     const self = this;
 
-    mongoose.models["Employee"].findOne({ empId: this.empId }, function (err, results) {
-        if (err) {
-            next(err);
-        } else if (results) {
-            console.log('employee id must be unique');
-            self.invalidate("empId", "employee id must be unique");
-            next(new Error("employee id must be unique"));
-        } else {
-            next();
-        }
-    });
-});
+//     mongoose.models["Employee"].findOne({ empId: this.empId }, function (err, results) {
+//         if (err) {
+//             next(err);
+//         } else if (results) {
+//             console.log('employee id must be unique');
+//             self.invalidate("empId", "employee id must be unique");
+//             next(this.empId);
+//         } else {
+//             next();
+//         }
+//     });
+// });
 
 module.exports = mongoose.model('Employee', EmployeeSchema);
