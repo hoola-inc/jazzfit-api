@@ -163,6 +163,25 @@ exports.refreshToken = async (req, res, next) => {
   }
 };
 
+exports.updateBody = async (req, res, next) => {
+  try {
+    const empId = req.params.id;
+    updateObject = {
+      weight: req.body.weight,
+      height: req.body.height
+    };
+    await EmpModel.update(
+      { empId: empId },
+      { $set: updateObject },
+      { runValidators: true }
+    );
+    const data = await EmpModel.findOne({ empId: empId });
+    response.SUCCESS(res, data);
+  } catch (error) {
+    next(error);
+  }
+};
+
 const jwtToken = email => {
   const payload = { email: email };
   const options = { expiresIn: "12h" };
