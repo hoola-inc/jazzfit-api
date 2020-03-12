@@ -9,13 +9,15 @@ exports.createUser = async (req, res, next) => {
     if (getEmpData.length > 0) {
       res.redirect(process.env.URL + empId);
     } else {
+      const gender = req.body.Gender;
+      
       const newUser = new EmpModel({
         empName: req.body.Emp_Name,
         empId: empId,
         department: req.body.Department,
         email: req.body.Email,
         dateOfBirth: req.body.DOB,
-        gender: req.body.Gender
+        gender: gender.charAt(0).toUpperCase()
       });
       const saveUser = await newUser.save();
       const token = jwtToken(req.body.Email);
