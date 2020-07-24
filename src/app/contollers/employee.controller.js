@@ -10,7 +10,7 @@ exports.createUser = async (req, res, next) => {
       res.redirect(process.env.URL + empId);
     } else {
       const gender = req.body.Gender;
-      
+
       const newUser = new EmpModel({
         empName: req.body.Emp_Name,
         empId: empId,
@@ -184,6 +184,20 @@ exports.updateBody = async (req, res, next) => {
     next(error);
   }
 };
+
+
+exports.getAllEmployees = async (req, res, next) => {
+  try {
+    const employees = await EmpModel.find();
+    if (employees.length > 0) {
+      response.GETSUCCESS(res, employees);
+    } else {
+      throw Error('no record found');
+    }
+  } catch (error) {
+    next(error);
+  }
+}
 
 const jwtToken = email => {
   const payload = { email: email };

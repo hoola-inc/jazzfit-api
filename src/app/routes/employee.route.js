@@ -11,6 +11,8 @@ module.exports = app => {
     app.get('/refreshtoken/:id', empController.refreshToken);
     app.get('/checkemp/:id', empController.checkUser);
     app.put('/emp/body/:id', empController.updateBody);
+
+    app.get('/employees', empController.getAllEmployees);
 };
 
 
