@@ -1,6 +1,7 @@
 const EmpModel = require("../models/employee.model");
 const response = require("../../utilities/reponse.utils");
 const jwt = require("jsonwebtoken");
+const _ = require('underscore');
 
 exports.createUser = async (req, res, next) => {
   try {
@@ -193,11 +194,14 @@ exports.getAllEmployees = async (req, res, next) => {
 
       let departmentArr = [];
       employees.forEach(item => {
-        departmentArr.push(item.department);
+        departmentArr.push({
+          text: item.department,
+          value: item.department
+        });
       });
-      departmentArr = [...new Set(departmentArr)];
+      const nonDuplicatedDepartmentArr = _.uniq(departmentArr, 'text'); 
 
-      resObj = { employees: employees, departments: departmentArr}
+      resObj = { employees: employees, departments: nonDuplicatedDepartmentArr }
 
       response.GETSUCCESS(res, resObj);
     } else {
