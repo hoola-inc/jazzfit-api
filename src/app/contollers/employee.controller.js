@@ -190,7 +190,16 @@ exports.getAllEmployees = async (req, res, next) => {
   try {
     const employees = await EmpModel.find();
     if (employees.length > 0) {
-      response.GETSUCCESS(res, employees);
+
+      let departmentArr = [];
+      employees.forEach(item => {
+        departmentArr.push(item.department);
+      });
+      departmentArr = [...new Set(departmentArr)];
+
+      resObj = { employees: employees, departments: departmentArr}
+
+      response.GETSUCCESS(res, resObj);
     } else {
       throw Error('no record found');
     }
